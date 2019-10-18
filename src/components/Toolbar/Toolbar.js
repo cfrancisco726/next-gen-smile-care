@@ -15,9 +15,6 @@ const toolbar = props => (
                 <ul>
                     <li><a href="/">About</a></li>
                     <li><a href="/">Services</a></li>
-                    <li><a href="/">Patient</a></li>
-                    <li><a href="/">Reviews</a></li>
-                    <li><a href="/">Contact us</a></li>
                     <li><a href="/">Request an appointment</a></li>
                 </ul>
             </div>
