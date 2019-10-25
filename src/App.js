@@ -33,15 +33,16 @@ class App extends Component {
       <Router>
         <div style={{height: '100%'}}>
           <Toolbar  drawerClickHandler={this.drawerToggleClickHandler}/> 
-          <SideDrawer show={this.state.sideDrawerOpen} />
+          <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>
           {backdrop}
           <Switch>
           <main style={{marginTop: '64px'}}>
-            <Route path="/" exact component={Landing} /> 
-            <Route path="/about" exact component={About} /> 
-            <Route path="/services" exact component={Services} /> 
-            <Route path="/contact" exact component={Contact} /> 
-            <Route path="/appointment" exact component={Appointment} /> 
+          <Route exact path="/"  component={About} /> 
+
+            <Route exact path="/about"  component={About} /> 
+            <Route exact path="/services" component={Services} /> 
+            <Route exact path="/contact" component={Contact} /> 
+            <Route exact path="/appointment" component={Appointment} /> 
           </main>
           </Switch>
         </div>
