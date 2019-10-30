@@ -7,6 +7,7 @@ import About from './components/Pages/About'
 import Services from './components/Pages/Services';
 import Contact from './components/Pages/Contact';
 import Appointment from './components/Pages/Appointment'
+import Footer from './components/Footer/Footer'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 
@@ -37,14 +38,14 @@ class App extends Component {
           {backdrop}
           <Switch>
           <main style={{marginTop: '64px'}}>
-          <Route exact path="/"  component={About} /> 
-
+            <Route exact path="/"  component={Landing} /> 
             <Route exact path="/about"  component={About} /> 
             <Route exact path="/services" component={Services} /> 
             <Route exact path="/contact" component={Contact} /> 
             <Route exact path="/appointment" component={Appointment} /> 
           </main>
           </Switch>
+          <Footer/>
         </div>
       </Router>
    );
