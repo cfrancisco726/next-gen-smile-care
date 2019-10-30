@@ -30,14 +30,11 @@ class Landing extends Component {
             </button>
           </Link>
         </section>
-        <section>
-          <h1>Info</h1>
+        <section className="intro-bio">
+          <h1>Dr Jane Philosophy</h1>
         </section>
-        <section>
-          <h1>What people are saying</h1>
-        </section>
-        <section>
-          <h1>Contact</h1>
+        <section className="comments-carousel">
+          <h1>What people are saying comments</h1>
         </section>
       </div>
     );

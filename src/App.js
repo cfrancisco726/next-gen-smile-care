@@ -2,11 +2,11 @@ import React, {Component } from 'react';
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
-import Landing from './components/Pages/Landing'
-import About from './components/Pages/About'
-import Services from './components/Pages/Services';
-import Contact from './components/Pages/Contact';
-import Appointment from './components/Pages/Appointment'
+import Landing from './components/Pages/Landing/Landing'
+import About from './components/Pages/About/About'
+import Services from './components/Pages/Services/Services';
+import Contact from './components/Pages/Contact/Contact';
+import Appointment from './components/Pages/Appointment/Appointment'
 import Footer from './components/Footer/Footer'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
