@@ -1,17 +1,38 @@
 .welcome {
-  margin: auto;
-  text-align: center;
-  padding: 10px;
-  height: 240px;
-  background: grey;
-  vertical-align: middle;
-  color: white;
+  height: 500px;
+  width: 100%;
+  background-image: url("../../../images/hero_0.0.jpg");
+  background-size: 100%;
+}
+
+.welcome-greeting {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 60px;
+  line-height: 90px;
+  width: 450px;
+  padding-top: 5px;
+  margin: 70px 0px 0px 120px;
+}
+
+.welcome-greeting span:nth-child(1) {
+  color: #4b7c9c;
+}
+
+.welcome-greeting span:nth-child(3) {
+  color: #1fb0c8;
+}
+
+.welcome-greeting span:nth-child(5) {
+  color: #cf5695;
 }
 
 .appointment-button {
   background: black;
   border: none;
   color: white;
+  background-color: #1fb0c8;
+  width: 200px;
+  height: 50px;
 }
 
 .services {

@@ -7,16 +7,25 @@ class Landing extends Component {
     return (
       <div className="landing">
         <section className="welcome">
-          <h1>Welcome to NextGenSmiles Dental</h1>
-          <h2>
-            Contrary to popular belief, Lorem Ipsum is not simply over 2000
-          </h2>
-          <Link to="/appointment">
-            <button className="appointment-button" type="button">
-              Request an appointment
-            </button>
-          </Link>
+          <div className="welcome-greeting">
+            <h1>
+              <span>NEXT</span>
+              <br />
+              <span>GEN</span>
+              <br />
+              <span>SMILES</span>
+              <br />
+            </h1>
+            <div>
+              <Link to="/appointment">
+                <button className="appointment-button" type="button">
+                  Request an appointment
+                </button>
+              </Link>
+            </div>
+          </div>
         </section>
+
         <section className="services">
           <h1>Our Services</h1>
           <p>
@@ -36,6 +45,7 @@ class Landing extends Component {
         <section className="comments-carousel">
           <h1>What people are saying comments</h1>
         </section>
+        <section />
       </div>
     );
   }
