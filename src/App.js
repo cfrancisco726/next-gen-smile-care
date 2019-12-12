@@ -37,7 +37,7 @@ class App extends Component {
           <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>
           {backdrop}
           <Switch>
-          <main style={{marginTop: '64px'}}>
+          <main style={{marginTop: '100px'}}>
             <Route exact path="/"  component={Landing} /> 
             <Route exact path="/about"  component={About} /> 
             <Route exact path="/services" component={Services} /> 

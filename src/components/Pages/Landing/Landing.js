@@ -16,24 +16,29 @@ class Landing extends Component {
               <span>SMILES</span>
               <br />
             </h1>
-            <Link to="/appointment">
-              <button className="appointment-button">
-                Request an Appointment
-              </button>
+          </div>
+          <div className="appointment-button">
+            <Link
+              to="/appointment"
+              className="appointment-button-link"
+              type="button"
+            >
+              <button>Request an Appointment</button>
             </Link>
           </div>
         </section>
 
         <section className="services">
-          <div>
-            <h1>Our Services</h1>
+          <div services-header>
+            <h1>OUR SERVICES</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s
+              ever since the 1500s. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s.
             </p>
           </div>
-          <div>
+          <div services-icons>
             <figure>
               <img
                 src={require("../../../images/cleaning.svg")}

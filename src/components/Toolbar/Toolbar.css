@@ -1,11 +1,10 @@
 .toolbar {
   position: fixed;
+  background: #4b7c9c;
   top: 0;
   left: 0;
-  width: 100%;
-  background: #e8e8e8;
+  width: 100vw;
   height: 100px;
-  color: white;
 }
 
 .toolbar_navigation {
@@ -22,7 +21,7 @@
 .toolbar_logo a {
   text-decoration: none;
   font-size: 2rem;
-  color: grey;
+  color: white;
 }
 
 .spacer {
@@ -40,13 +39,13 @@
 }
 
 .toolbar_navigation-items a {
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
-  color: #ff1493;
+  color: grey;
 }
 
 @media (max-width: 768px) {

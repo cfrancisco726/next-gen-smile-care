@@ -3,7 +3,7 @@ import "./Services.css";
 
 function Services() {
   return (
-    <div className="services">
+    <div className="services-pg">
       <h1>Services</h1>
     </div>
   );
