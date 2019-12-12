@@ -17,15 +17,11 @@ class Landing extends Component {
               <br />
             </h1>
           </div>
-          <div className="appointment-button">
-            <Link
-              to="/appointment"
-              className="appointment-button-link"
-              type="button"
-            >
-              <button>Request an Appointment</button>
-            </Link>
-          </div>
+          <Link to="/appointment">
+            <button className="appointment-button" type="button">
+              Request an Appointment
+            </button>
+          </Link>
         </section>
 
         <section className="services">
