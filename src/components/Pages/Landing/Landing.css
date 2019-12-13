@@ -1,6 +1,6 @@
 .welcome {
   height: 45vh;
-  width: 100vw;
+  width: 100%;
   background-image: url("../../../images/hero_0.0.jpg");
   background-size: 100%;
   box-sizing: border-box;
@@ -10,9 +10,6 @@
 .welcome-greeting {
   font-family: "Red Hat Text", sans-serif;
   font-size: 5em;
-  line-height: 90px;
-  width: 450px;
-  padding: 30px 120px 0px 120px;
 }
 
 .welcome-greeting h1 {
@@ -31,7 +28,7 @@
   color: #cf5695;
 }
 
-.appointment-button {
+.appointment-btn {
   color: white;
   background: #1fb0c8;
   height: 50px;
@@ -40,39 +37,74 @@
   cursor: pointer;
 }
 
-.services {
+.services-container {
   background-color: #69b0bc;
   font-family: "Red Hat Text", sans-serif;
   color: white;
   width: 100%;
+  margin: 0;
 }
 
-.services h1 {
+.services-container h1 {
   margin-top: 0px;
   padding-top: 40px;
   text-align: center;
   font-size: 2em;
 }
 
-.services p:nth-child(2) {
-  padding: 0px 260px 0px 260px;
-}
-
-.services-icons {
-  display: flex;
-  flex-direction: column;
-}
-.services p {
+.services-title {
+  margin: 0 10% 5% 10%;
   text-align: center;
 }
 
-.services button {
+.services-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-item {
+  background: pink;
+  display: inline-block;
+  vertical-align: top;
+  width: 40%;
+  height: 30%;
+}
+
+.services-item img {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  max-width: 100px;
+  background: grey;
+}
+.services-copy {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+  margin-left: 10px;
+  word-wrap: break-word;
+  @media (max-width: 620px) {
+    width: 50%;
+  }
+}
+
+.services-copy h3 {
+  margin: 0;
+}
+
+.services-btn {
+  text-align: center;
+}
+.services-btn-btn {
   background: #cf5695;
   border: none;
   color: white;
-  height: 75px;
-  width: 270px;
+  height: 50px;
+  width: 260px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .intro-bio {

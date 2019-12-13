@@ -18,14 +18,14 @@ class Landing extends Component {
             </h1>
           </div>
           <Link to="/appointment">
-            <button className="appointment-button" type="button">
+            <button className="appointment-btn" type="button">
               Request an Appointment
             </button>
           </Link>
         </section>
 
-        <section className="services">
-          <div services-header>
+        <section className="services-container">
+          <div className="services-title">
             <h1>OUR SERVICES</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -34,66 +34,73 @@ class Landing extends Component {
               dummy text ever since the 1500s.
             </p>
           </div>
-          <div services-icons>
-            <figure>
+          <div className="services-row">
+            <div className="services-item">
               <img
                 src={require("../../../images/cleaning.svg")}
                 alt="cleaning"
-                width="40px"
               />
-              <figcaption>Cleaning and Whitening</figcaption>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
-              </p>
-            </figure>
-            <figure>
+              <div className="services-copy">
+                <h3>Cleaning and Whitening</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </p>
+              </div>
+            </div>
+            <div className="services-item">
               <img
                 src={require("../../../images/invisalign.svg")}
                 alt="cleaning"
-                width="40px"
               />
-              <figcaption>Invisalign</figcaption>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
-              </p>
-            </figure>
-            <figure>
+              <div className="services-copy">
+                <h3>Invisalign</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </p>
+              </div>
+            </div>
+            <div className="services-item">
               <img
                 src={require("../../../images/implant.svg")}
                 alt="cleaning"
                 width="40px"
               />
-              <figcaption>Dental Implant</figcaption>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
-              </p>
-            </figure>
-            <figure>
+              <div className="services-copy">
+                <h3>Dental Implant</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </p>
+              </div>
+            </div>
+            <div className="services-item">
               <img
                 src={require("../../../images/perio.svg")}
                 alt="cleaning"
                 width="40px"
               />
-              <figcaption>Periodontal Treatment</figcaption>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s
-              </p>
-            </figure>
+              <div className="services-copy">
+                <h3>Periodontal Treatment</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s
+                </p>
+              </div>
+            </div>
           </div>
-
-          <Link to="/services">
-            <button className="services-button" type="button">
-              View all services
-            </button>
-          </Link>
+          <div className="services-btn">
+            <Link to="/services">
+              <button className="services-btn-btn" type="button">
+                View All Services
+              </button>
+            </Link>
+          </div>
         </section>
         <section className="intro-bio">
           <img
@@ -110,7 +117,7 @@ class Landing extends Component {
 
           <Link to="/services">
             <button className="services-button" type="button">
-              View all services
+              View All Services
             </button>
           </Link>
         </section>
