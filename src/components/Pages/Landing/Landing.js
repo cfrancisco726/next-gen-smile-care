@@ -6,7 +6,7 @@ class Landing extends Component {
   render() {
     return (
       <div className="landing">
-        <section className="welcome">
+        <section className="welcome-container">
           <div className="welcome-greeting">
             <h1>
               <span>NEXT</span>
@@ -18,7 +18,7 @@ class Landing extends Component {
             </h1>
           </div>
           <Link to="/appointment">
-            <button className="appointment-btn" type="button">
+            <button className="welcome-appt-btn" type="button">
               Request an Appointment
             </button>
           </Link>

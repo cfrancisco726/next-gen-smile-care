@@ -1,18 +1,21 @@
-.welcome {
-  height: 45vh;
+.welcome-container {
+  height: 55vh;
   background-image: url("../../../images/hero_0.0.jpg");
 
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  margin-top: 100px;
+
+  padding-top: 1%;
   width: 100%;
 }
 
 .welcome-greeting {
-  font-family: "Red Hat Text", sans-serif;
-  font-size: 5vw;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 5em;
+  line-height: 1.2em;
+  margin-top: 10px;
 }
 
 .welcome-greeting h1 {
@@ -31,13 +34,15 @@
   color: #cf5695;
 }
 
-.appointment-btn {
+.welcome-appt-btn {
+  font-family: "Montserrat", sans-serif;
   color: white;
   background: #1fb0c8;
   border: none;
   height: 50px;
   width: 260px;
-  margin: 90px 0px 0px 120px;
+  margin-left: 10%;
+  /* margin: 90px 0px 0px 120px; */
   cursor: pointer;
 }
 
