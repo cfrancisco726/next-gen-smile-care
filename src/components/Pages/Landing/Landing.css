@@ -1,19 +1,22 @@
 .welcome {
   height: 45vh;
-  width: 100%;
   background-image: url("../../../images/hero_0.0.jpg");
-  background-size: 100%;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   box-sizing: border-box;
   margin-top: 100px;
+  width: 100%;
 }
 
 .welcome-greeting {
   font-family: "Red Hat Text", sans-serif;
-  font-size: 5em;
+  font-size: 5vw;
 }
 
 .welcome-greeting h1 {
-  margin: 60px 0px 0px 0px;
+  margin-left: 10%;
 }
 
 .welcome-greeting span:nth-child(1) {
@@ -31,6 +34,7 @@
 .appointment-btn {
   color: white;
   background: #1fb0c8;
+  border: none;
   height: 50px;
   width: 260px;
   margin: 90px 0px 0px 120px;
@@ -65,19 +69,25 @@
 }
 
 .services-item {
-  background: pink;
+  /* background: pink; */
   display: inline-block;
   vertical-align: top;
   width: 40%;
   height: 30%;
 }
 
+@media only screen and (max-width: 660px) {
+  .services-item {
+    width: 80%;
+    margin-top: 10px;
+  }
+}
+
 .services-item img {
   display: inline-block;
   vertical-align: top;
-  width: 46%;
+  width: 40%;
   max-width: 100px;
-  background: grey;
 }
 .services-copy {
   display: inline-block;
@@ -85,9 +95,6 @@
   width: 60%;
   margin-left: 10px;
   word-wrap: break-word;
-  @media (max-width: 620px) {
-    width: 50%;
-  }
 }
 
 .services-copy h3 {

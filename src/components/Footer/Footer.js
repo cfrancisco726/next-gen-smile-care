@@ -25,8 +25,6 @@ const footer = props => (
     </div>
     <div className="gmap">
       <iframe
-        width="400"
-        height="450"
         frameBorder="0"
         src="https://www.google.com/maps/embed/v1/view?key=AIzaSyCYDGXocQ5GcIP6P1Bd9-4GNuFyZUAuZpc
     &center=40.7396209, -73.7009663&zoom=20&maptype=satellite "
