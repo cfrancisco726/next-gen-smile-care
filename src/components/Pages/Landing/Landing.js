@@ -40,7 +40,7 @@ class Landing extends Component {
                 src={require("../../../images/cleaning.svg")}
                 alt="cleaning"
               />
-              <div className="services-copy">
+              <div className="services-text">
                 <h3>Cleaning and Whitening</h3>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
@@ -52,9 +52,9 @@ class Landing extends Component {
             <div className="services-item">
               <img
                 src={require("../../../images/invisalign.svg")}
-                alt="cleaning"
+                alt="invisalign"
               />
-              <div className="services-copy">
+              <div className="services-text">
                 <h3>Invisalign</h3>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
@@ -64,12 +64,8 @@ class Landing extends Component {
               </div>
             </div>
             <div className="services-item">
-              <img
-                src={require("../../../images/implant.svg")}
-                alt="cleaning"
-                width="40px"
-              />
-              <div className="services-copy">
+              <img src={require("../../../images/implant.svg")} alt="impant" />
+              <div className="services-text">
                 <h3>Dental Implant</h3>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
@@ -79,12 +75,8 @@ class Landing extends Component {
               </div>
             </div>
             <div className="services-item">
-              <img
-                src={require("../../../images/perio.svg")}
-                alt="cleaning"
-                width="40px"
-              />
-              <div className="services-copy">
+              <img src={require("../../../images/perio.svg")} alt="perio" />
+              <div className="services-text">
                 <h3>Periodontal Treatment</h3>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and
@@ -94,32 +86,26 @@ class Landing extends Component {
               </div>
             </div>
           </div>
-          <div className="services-btn">
-            <Link to="/services">
-              <button className="services-btn-btn" type="button">
-                View All Services
-              </button>
-            </Link>
-          </div>
+          <Link to="/services">
+            <button type="button">View All Services</button>
+          </Link>
         </section>
         <section className="intro-bio">
           <img
             src={require("../../../images/dr-jane.jpg")}
             alt="jane-profile"
-            width="30%"
           />
-          <h1>DR. JANE JAROONNARM</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s
-          </p>
-
-          <Link to="/services">
-            <button className="services-button" type="button">
-              View All Services
-            </button>
-          </Link>
+          <div className="intro-bio-text">
+            <h1>DR. JANE JAROONNARM</h1>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s
+            </p>
+            <Link to="/services">
+              <button type="button">View All Services</button>
+            </Link>
+          </div>
         </section>
         <section className="comments-carousel">
           <h1>What People Are Saying</h1>

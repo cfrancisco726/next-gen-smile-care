@@ -1,5 +1,5 @@
 .welcome-container {
-  height: 55vh;
+  height: 65vh;
   background-image: url("../../../images/hero_0.0.jpg");
 
   background-size: cover;
@@ -9,6 +9,7 @@
 
   padding-top: 1%;
   width: 100%;
+  height: auto;
 }
 
 .welcome-greeting {
@@ -16,6 +17,13 @@
   font-size: 5em;
   line-height: 1.2em;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 660px) {
+  .welcome-greeting {
+    font-size: 2.5em;
+    margin-top: 100px;
+  }
 }
 
 .welcome-greeting h1 {
@@ -42,8 +50,20 @@
   height: 50px;
   width: 260px;
   margin-left: 10%;
-  /* margin: 90px 0px 0px 120px; */
+  margin-bottom: 10%;
   cursor: pointer;
+}
+
+.welcome-appt-btn:hover {
+  background-color: #dddddd;
+}
+
+@media only screen and (max-width: 660px) {
+  .welcome-appt-btn {
+    height: 25px;
+    width: 130px;
+    font-size: 0.1em;
+  }
 }
 
 .services-container {
@@ -52,6 +72,7 @@
   color: white;
   width: 100%;
   margin: 0;
+  text-align: center;
 }
 
 .services-container h1 {
@@ -62,7 +83,7 @@
 }
 
 .services-title {
-  margin: 0 10% 5% 10%;
+  margin: 0 20% 5% 20%;
   text-align: center;
 }
 
@@ -74,11 +95,12 @@
 }
 
 .services-item {
-  /* background: pink; */
   display: inline-block;
   vertical-align: top;
   width: 40%;
   height: 30%;
+  border-style: none;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 660px) {
@@ -91,10 +113,9 @@
 .services-item img {
   display: inline-block;
   vertical-align: top;
-  width: 40%;
-  max-width: 100px;
+  max-width: 50px;
 }
-.services-copy {
+.services-text {
   display: inline-block;
   vertical-align: top;
   width: 60%;
@@ -102,39 +123,68 @@
   word-wrap: break-word;
 }
 
-.services-copy h3 {
+.services-text h3 {
   margin: 0;
 }
 
-.services-btn {
-  text-align: center;
-}
-.services-btn-btn {
+.services-container button {
   background: #cf5695;
   border: none;
   color: white;
   height: 50px;
   width: 260px;
   cursor: pointer;
-  margin-bottom: 10px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+@media only screen and (max-width: 660px) {
+  .services-container button {
+    height: 25px;
+    width: 130px;
+  }
 }
 
 .intro-bio {
   background: #4b7c9c;
   color: white;
-  margin: auto;
-  padding-top: 50px;
   text-align: center;
   font-family: "Red Hat Text", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
+.intro-bio img {
+  display: block;
+  width: 800px;
+  max-width: 100%;
+  flex: 1;
+}
+.intro-bio-text {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 10%;
+  flex: 1;
+}
 .intro-bio button {
   background: #69b0bc;
   border: none;
   color: white;
-  height: 75px;
-  width: 270px;
+  height: 50px;
+  width: 260px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 660px) {
+  .intro-bio button {
+    height: 25px;
+    width: 130px;
+  }
 }
 
 .comments-carousel {
@@ -146,4 +196,5 @@
 
 .comments-carousel h1 {
   line-height: 100px;
+  margin: 0;
 }
