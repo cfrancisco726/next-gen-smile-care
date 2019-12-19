@@ -5,14 +5,32 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background-color: darkgray;
-  border: black;
+  background-color: #4b7c9c;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
   width: 100vw;
   padding: 0;
+  list-style-type: none;
 }
 
-.footer-container > div {
-  padding: 5px;
+@media only screen and (max-width: 750px) {
+  .footer-container {
+    flex-direction: column;
+    height: 800px;
+  }
+}
+
+.footer-container ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.hours h3 {
+  margin: 0;
+}
+
+.contact h3 {
+  margin: 0;
 }
 
 .gmap iframe {
