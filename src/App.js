@@ -9,6 +9,7 @@ import Contact from './components/Pages/Contact/Contact';
 import Appointment from './components/Pages/Appointment/Appointment'
 import Footer from './components/Footer/Footer'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
