@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import "./Appointment.css";
 
 class Appointment extends Component {
@@ -19,6 +18,7 @@ class Appointment extends Component {
   }
 
   handleSubmit(event) {
+    event.preventDefault();
     const templateId = "template_qWttzqDG";
 
     this.sendFeedback(templateId, {
@@ -41,58 +41,73 @@ class Appointment extends Component {
 
   render() {
     return (
-      <form className="appointment-form">
-        <h1>Request an Appointment</h1>
-        <label>
-          Your name*
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            value={this.state.name}
-            onChange={this.handleChange}
-          />
-        </label>
-        <label>
-          Email*
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-        </label>
-        <label>
-          phone
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={this.state.phone}
-            onChange={this.handleChange}
-          />
-        </label>
-        <label>
-          Message
-          <textarea
-            id="message"
-            name="message"
-            value={this.state.message}
-            onChange={this.handleChange}
-            placeholder="Post some lorem ipsum here"
-            required
-          />
-        </label>
-        <input
-          type="button"
-          value="Request Appointment"
-          className="btn btn-submit"
-          onClick={this.handleSubmit}
-        />
-      </form>
+      // eslint-disable-next-line react/jsx-filename-extension
+      <div>
+        <form className="appointment-form">
+          <h1>Request an Appointment</h1>
+          <div>
+              <label>
+              Your name*
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+            </label>
+            </div>
+          <div>
+              <label>
+              Email*
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+            </label>
+            </div>
+          <div>
+              <label>
+              phone
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={this.state.phone}
+                onChange={this.handleChange}
+              />
+            </label>
+            </div>
+          <div>
+              <label>
+              Message
+              <textarea
+                id="message"
+                name="message"
+                value={this.state.message}
+                onChange={this.handleChange}
+                placeholder="Post some lorem ipsum here"
+                required
+              />
+            </label>
+            </div>
+          <div>
+              <button
+              type="submit"
+              value="Request Appointment"
+              className="btn-submit"
+              onSubmit={this.handleSubmit}
+            >
+              Request Appointment
+            </button>
+            </div>
+        </form>
+      </div>
     );
   }
 }
