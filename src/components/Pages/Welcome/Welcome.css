@@ -1,0 +1,67 @@
+.welcome-container {
+  height: 65vh;
+  background-image: url("../../../images/hero_0.0.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  padding-top: 1%;
+  width: 100%;
+  height: auto;
+}
+
+.welcome-greeting h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 8em;
+  line-height: 0.8em;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 660px) {
+  .welcome-greeting {
+    font-size: 2.5em;
+    margin-top: 100px;
+  }
+}
+
+.welcome-greeting h1 {
+  margin-left: 10%;
+}
+
+.welcome-greeting span:nth-child(1) {
+  color: #4b7c9c;
+}
+
+.welcome-greeting span:nth-child(3) {
+  color: #1fb0c8;
+}
+
+.welcome-greeting span:nth-child(5) {
+  color: #cf5695;
+}
+
+.welcome-appt-btn {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: #1fb0c8;
+  border: none;
+  height: 50px;
+  width: 260px;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  cursor: pointer;
+}
+
+.welcome-appt-btn:hover {
+  background-color: #dddddd;
+}
+
+@media only screen and (max-width: 660px) {
+  .welcome-appt-btn {
+    height: 25px;
+    width: 130px;
+    font-size: 0.1em;
+  }
+}
