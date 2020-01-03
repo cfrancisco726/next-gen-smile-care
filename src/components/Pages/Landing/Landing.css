@@ -12,10 +12,10 @@
   height: auto;
 }
 
-.welcome-greeting {
+.welcome-greeting h1 {
   font-family: "Red Hat Display", sans-serif;
-  font-size: 5em;
-  line-height: 1.2em;
+  font-size: 8em;
+  line-height: 0.8em;
   margin-top: 10px;
 }
 
