@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import "./Appointment.css";
 
 class Appointment extends Component {
@@ -41,73 +43,55 @@ class Appointment extends Component {
 
   render() {
     return (
-      // eslint-disable-next-line react/jsx-filename-extension
-      <div>
-        <form className="appointment-form">
-          <h1>Request an Appointment</h1>
-          <div>
-              <label>
-              Your name*
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                value={this.state.name}
-                onChange={this.handleChange}
-              />
-            </label>
-            </div>
-          <div>
-              <label>
-              Email*
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                value={this.state.email}
-                onChange={this.handleChange}
-              />
-            </label>
-            </div>
-          <div>
-              <label>
-              phone
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                value={this.state.phone}
-                onChange={this.handleChange}
-              />
-            </label>
-            </div>
-          <div>
-              <label>
-              Message
-              <textarea
-                id="message"
-                name="message"
-                value={this.state.message}
-                onChange={this.handleChange}
-                placeholder="Post some lorem ipsum here"
-                required
-              />
-            </label>
-            </div>
-          <div>
-              <button
-              type="submit"
-              value="Request Appointment"
-              className="btn-submit"
-              onSubmit={this.handleSubmit}
-            >
-              Request Appointment
-            </button>
-            </div>
-        </form>
-      </div>
+      <Form onSubmit={this.handleSubmit}>
+        <h1>Request an Appointment</h1>
+        <Form.Group controlId="formName">
+          <Form.Label>Your name*</Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Name"
+            name="name"
+            required
+            value={this.state.name}
+            onChange={this.handleChange}
+          />
+        </Form.Group>
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email*</Form.Label>
+          <Form.Control
+            type="email"
+            name="email"
+            required
+            value={this.state.email}
+            onChange={this.handleChange}
+          />
+        </Form.Group>
+        <Form.Group controlId="formPhone">
+          <Form.Label>phone number</Form.Label>
+          <Form.Control
+            type="tel"
+            name="phone"
+            required
+            value={this.state.phone}
+            onChange={this.handleChange}
+          />
+        </Form.Group>
+        <Form.Group controlId="formTextArea">
+          <Form.Label> Message</Form.Label>
+          <Form.Control
+            as="textarea"
+            rows="3"
+            name="message"
+            value={this.state.message}
+            onChange={this.handleChange}
+            placeholder="Post some lorem ipsum here"
+            required
+          />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
     );
   }
 }
