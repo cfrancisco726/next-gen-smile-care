@@ -2,7 +2,7 @@
   background-color: #69b0bc;
   font-family: "Red Hat Text", sans-serif;
   color: white;
-  width: auto;
+  width: 100%;
   margin: 0;
   text-align: center;
 }
@@ -54,10 +54,6 @@
   width: 60%;
   margin-left: 10px;
   word-wrap: break-word;
-}
-
-.services-text h3 {
-  margin: 0;
 }
 
 .services-container button {

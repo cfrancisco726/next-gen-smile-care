@@ -17,7 +17,7 @@ const services_landing = props => (
       <div className="services-item">
         <img src={require("../../../images/cleaning.svg")} alt="cleaning" />
         <div className="services-text">
-          <h3>Cleaning and Whitening</h3>
+          <h4>Cleaning and Whitening</h4>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -28,7 +28,7 @@ const services_landing = props => (
       <div className="services-item">
         <img src={require("../../../images/invisalign.svg")} alt="invisalign" />
         <div className="services-text">
-          <h3>Invisalign</h3>
+          <h4>Invisalign</h4>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -39,7 +39,7 @@ const services_landing = props => (
       <div className="services-item">
         <img src={require("../../../images/implant.svg")} alt="impant" />
         <div className="services-text">
-          <h3>Dental Implant</h3>
+          <h4>Dental Implant</h4>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -50,7 +50,7 @@ const services_landing = props => (
       <div className="services-item">
         <img src={require("../../../images/perio.svg")} alt="perio" />
         <div className="services-text">
-          <h3>Periodontal Treatment</h3>
+          <h4>Periodontal Treatment</h4>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
