@@ -43,7 +43,7 @@ class Appointment extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form onSubmit={this.handleSubmit} className="appointment-form">
         <h1>Request an Appointment</h1>
         <Form.Group controlId="formName">
           <Form.Label>Your name*</Form.Label>
