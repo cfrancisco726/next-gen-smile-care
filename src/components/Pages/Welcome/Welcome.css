@@ -20,7 +20,7 @@
 }
 
 @media only screen and (max-width: 660px) {
-  .welcome-greeting {
+  .welcome-greeting h1 {
     font-size: 2.5em;
     margin-top: 100px;
   }

@@ -12,14 +12,14 @@ class Appointment extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
+  handleChange = event => {
     const { value } = event.target;
 
     this.setState({ [event.target.name]: value });
     console.log("handle");
   }
 
-  handleSubmit(event) {
+  handleSubmit = event => {
     event.preventDefault();
     const templateId = "template_qWttzqDG";
 
@@ -56,6 +56,7 @@ class Appointment extends Component {
             onChange={this.handleChange}
           />
         </Form.Group>
+        <Form.Control.Feedback></Form.Control.Feedback>
         <Form.Group controlId="formEmail">
           <Form.Label>Email*</Form.Label>
           <Form.Control

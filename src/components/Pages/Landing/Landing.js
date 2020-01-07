@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./Landing.css";
 import { Link } from "react-router-dom";
-import { Carousel } from "react-bootstrap";
 import Welcome from "../Welcome/Welcome";
 import Services_Landing from "../Services_Landing/Services_Landing";
 import Bio from "../Bio/Bio";
