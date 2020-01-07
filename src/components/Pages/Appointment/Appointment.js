@@ -30,6 +30,7 @@ class Appointment extends Component {
       phone_num: this.state.phone
     });
     console.log("submit");
+    this.props.history.push(`/thank_you`)
   }
 
   sendFeedback(templateId, variables) {
