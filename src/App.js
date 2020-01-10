@@ -8,7 +8,7 @@ import Services from './components/Pages/Services/Services';
 import Contact from './components/Pages/Contact/Contact';
 import Appointment from './components/Pages/Appointment/Appointment'
 import Footer from './components/Footer/Footer'
-import Thank_You from './components/Pages/Thank_You/Thank_You'
+import ThankYou from './components/Pages/ThankYou/ThankYou'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -45,7 +45,7 @@ class App extends Component {
             <Route exact path="/services" component={Services} /> 
             <Route exact path="/contact" component={Contact} /> 
             <Route exact path="/appointment" component={Appointment} /> 
-            <Route exact path="/thank_you" component={Thank_You} /> 
+            <Route exact path="/thank_you" component={ThankYou} /> 
           </main>
           </Switch>
           <Footer/>

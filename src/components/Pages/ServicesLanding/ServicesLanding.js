@@ -1,5 +1,5 @@
 import React from "react";
-import "./Services_Landing.css";
+import "./ServicesLanding.css";
 import { Link } from "react-router-dom";
 
 const services_landing = props => (
