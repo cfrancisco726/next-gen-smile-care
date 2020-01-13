@@ -1,4 +1,58 @@
+.about-container {
+  width: 100%;
+}
 .about-header img {
   height: 370px;
-  width: 1400px;
+  width: 100%;
+}
+
+.our-office-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.our-office-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.our-office-col-copy {
+  text-align: left;
+  padding: 10%;
+  color: #4b7c9c;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.our-office-img {
+  width: 50%;
+  padding: 10%;
+}
+
+.our-office-img {
+  width: 100%;
+}
+
+.about-approach {
+  margin: 5% 10% 10% 5%;
+  color: #4b7c9c;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.about-approach-copy {
+  text-align: left;
+}
+
+.about-approach-btn {
+  text-align: center;
+}
+
+.about-quote {
+  text-align: center;
+  background-color: #69b0bc;
+  color: white;
+  padding: 10%;
 }
