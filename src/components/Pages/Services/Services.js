@@ -1,10 +1,9 @@
 import React from "react";
 import "./Services.css";
-import { Link } from "react-router-dom";
 
-function Services() {
+const Services = props => {
   return (
-    <div className="services-pg">
+    <div className="services-pg-container">
       <div>
         <img src={require("../../../images/our_office.jpg")} alt="our_office" />
       </div>
@@ -17,10 +16,10 @@ function Services() {
           text ever since the 1500s.
         </p>
       </div>
-      <div className="services-row">
-        <div className="services-item">
+      <div className="services-pg-row">
+        <div className="services-pg-item">
           <img src={require("../../../images/cleaning.svg")} alt="cleaning" />
-          <div className="services-text">
+          <div className="services-pg-text">
             <h4>Cleaning and Whitening</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -29,12 +28,12 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className="services-item">
+        <div className="services-pg-item">
           <img
             src={require("../../../images/invisalign.svg")}
             alt="invisalign"
           />
-          <div className="services-text">
+          <div className="services-pg-text">
             <h4>Invisalign</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -43,9 +42,9 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className="services-item">
+        <div className="services-pg-item">
           <img src={require("../../../images/implant.svg")} alt="impant" />
-          <div className="services-text">
+          <div className="services-pg-text">
             <h4>Dental Implant</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -54,9 +53,9 @@ function Services() {
             </p>
           </div>
         </div>
-        <div className="services-item">
+        <div className="services-pg-item">
           <img src={require("../../../images/perio.svg")} alt="perio" />
-          <div className="services-text">
+          <div className="services-pg-text">
             <h4>Periodontal Treatment</h4>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -66,11 +65,8 @@ function Services() {
           </div>
         </div>
       </div>
-      <Link to="/services">
-        <button type="button">View All Services</button>
-      </Link>
     </div>
   );
-}
+};
 
 export default Services;
