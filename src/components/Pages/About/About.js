@@ -15,7 +15,7 @@ function About() {
       </section>
       <section className="our-office-row">
         <div className="our-office-col">
-          <div className="our-office-col-copy">
+          <div className="our-office-copy">
             <h1>OUR OFFICE</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -26,10 +26,12 @@ function About() {
           </div>
         </div>
         <div className="our-office-col">
-          <img
-            src={require("../../../images/our_office.jpg")}
-            alt="our_office"
-          />
+          <div className="our-office-img">
+            <img
+              src={require("../../../images/our_office.jpg")}
+              alt="our_office"
+            />
+          </div>
         </div>
       </section>
       <section className="about-approach">
@@ -39,12 +41,17 @@ function About() {
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s.
+            dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of
+            the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s. Lorem Ipsum has
+            been the industry's standard dummy text ever since the 1500s.
           </p>
         </div>
-        <div className="about-apporach-btn">
+        <div className="about-approach-btn">
           <Link to="/services">
-            <button type="button">View All Services</button>
+            <button type="button">
+              View All Services
+            </button>
           </Link>
         </div>
       </section>

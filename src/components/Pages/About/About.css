@@ -1,5 +1,6 @@
 .about-container {
   width: 100%;
+  overflow: hidden;
 }
 .about-header img {
   height: 370px;
@@ -13,41 +14,56 @@
   width: 100%;
 }
 
+/* @media only screen and (max-width: 800) {
+  .our-office-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+} */
+
 .our-office-col {
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  color: #69b0bc;
 }
 
-.our-office-col-copy {
+.our-office-copy {
   text-align: left;
+  width: 100%;
   padding: 10%;
-  color: #4b7c9c;
   font-family: "Red Hat Text", sans-serif;
 }
 
-.our-office-img {
-  width: 50%;
-  padding: 10%;
-}
-
-.our-office-img {
+.our-office-img img {
   width: 100%;
+  padding: 10%;
 }
 
 .about-approach {
   margin: 5% 10% 10% 5%;
-  color: #4b7c9c;
+  color: #69b0bc;
   font-family: "Red Hat Text", sans-serif;
 }
 
 .about-approach-copy {
   text-align: left;
 }
-
 .about-approach-btn {
   text-align: center;
+}
+.about-approach-btn button {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: #1fb0c8;
+  border: none;
+  height: 50px;
+  width: 260px;
+  cursor: pointer;
 }
 
 .about-quote {
