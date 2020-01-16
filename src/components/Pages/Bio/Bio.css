@@ -42,6 +42,10 @@
   cursor: pointer;
 }
 
+.intro-bio button:hover {
+  background-color: grey;
+}
+
 @media only screen and (max-width: 660px) {
   .intro-bio button {
     height: 25px;

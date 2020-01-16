@@ -67,6 +67,10 @@
   margin-bottom: 10%;
 }
 
+.services-container button:hover {
+  background-color: grey;
+}
+
 @media only screen and (max-width: 660px) {
   .services-container button {
     height: 25px;

@@ -52,7 +52,7 @@ class Appointment extends Component {
           />
         </div>
         <Form onSubmit={this.handleSubmit} className="appointment-form">
-          <h1>Request an Appointment</h1>
+          <h1>REQUEST AN APPOINTMENT</h1>
           <Form.Group controlId="formName">
             <Form.Label>Your name*</Form.Label>
             <Form.Control
@@ -98,7 +98,7 @@ class Appointment extends Component {
             />
           </Form.Group>
           <Button className="appointment-btn" type="submit">
-            REQUEST AN APPOINTMENT
+            Request an appointment
           </Button>
         </Form>
       </div>
