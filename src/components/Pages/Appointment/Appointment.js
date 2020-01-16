@@ -45,6 +45,12 @@ class Appointment extends Component {
   render() {
     return (
       <div className="appointment-container">
+        <div>
+          <img
+            src={require("../../../images/our_office.jpg")}
+            alt="our_office"
+          />
+        </div>
         <Form onSubmit={this.handleSubmit} className="appointment-form">
           <h1>Request an Appointment</h1>
           <Form.Group controlId="formName">

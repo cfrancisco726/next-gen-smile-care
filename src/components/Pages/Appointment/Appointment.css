@@ -1,6 +1,10 @@
 .appointment-container {
   background-color: #69b0bc;
 }
+.appointment-container img {
+  height: 370px;
+  width: 100%;
+}
 .appointment-form {
   max-width: 500px;
   margin: auto;

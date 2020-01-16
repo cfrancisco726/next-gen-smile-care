@@ -22,9 +22,6 @@ const toolbar = props => (
           <Link to="/services">
             <li>services</li>
           </Link>
-          <Link to="/contact">
-            <li>contact</li>
-          </Link>
           <Link to="/appointment">
             <li>Request an Appointment</li>
           </Link>
