@@ -1,7 +1,19 @@
+.appointment-container {
+  background-color: #69b0bc;
+}
 .appointment-form {
-  font-family: ariel;
   max-width: 500px;
   margin: auto;
   padding: 15px;
   border: none;
+  color: white;
+  font-family: "Montserrat Semibold";
+}
+
+.appointment-form h1 {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.appointment button {
+  color: #cf5695;
 }

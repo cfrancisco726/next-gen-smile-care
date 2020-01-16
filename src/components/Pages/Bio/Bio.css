@@ -18,7 +18,8 @@
   width: 100%;
 }
 .intro-bio-row img {
-  height: 664px;
+  height: auto;
+  width: 100%;
 }
 .intro-bio-column {
   display: flex;

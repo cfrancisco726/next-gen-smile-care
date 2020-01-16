@@ -44,56 +44,58 @@ class Appointment extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.handleSubmit} className="appointment-form">
-        <h1>Request an Appointment</h1>
-        <Form.Group controlId="formName">
-          <Form.Label>Your name*</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="Name"
-            name="name"
-            required
-            value={this.state.name}
-            onChange={this.handleChange}
-          />
-        </Form.Group>
-        <Form.Control.Feedback></Form.Control.Feedback>
-        <Form.Group controlId="formEmail">
-          <Form.Label>Email*</Form.Label>
-          <Form.Control
-            type="email"
-            name="email"
-            required
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-        </Form.Group>
-        <Form.Group controlId="formPhone">
-          <Form.Label>phone number</Form.Label>
-          <Form.Control
-            type="tel"
-            name="phone"
-            required
-            value={this.state.phone}
-            onChange={this.handleChange}
-          />
-        </Form.Group>
-        <Form.Group controlId="formTextArea">
-          <Form.Label> Message</Form.Label>
-          <Form.Control
-            as="textarea"
-            rows="3"
-            name="message"
-            value={this.state.message}
-            onChange={this.handleChange}
-            placeholder="Post some lorem ipsum here"
-            required
-          />
-        </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
-      </Form>
+      <div className="appointment-container">
+        <Form onSubmit={this.handleSubmit} className="appointment-form">
+          <h1>Request an Appointment</h1>
+          <Form.Group controlId="formName">
+            <Form.Label>Your name*</Form.Label>
+            <Form.Control
+              type="text"
+              placeholder="Name"
+              name="name"
+              required
+              value={this.state.name}
+              onChange={this.handleChange}
+            />
+          </Form.Group>
+          <Form.Control.Feedback></Form.Control.Feedback>
+          <Form.Group controlId="formEmail">
+            <Form.Label>Email*</Form.Label>
+            <Form.Control
+              type="email"
+              name="email"
+              required
+              value={this.state.email}
+              onChange={this.handleChange}
+            />
+          </Form.Group>
+          <Form.Group controlId="formPhone">
+            <Form.Label>phone number</Form.Label>
+            <Form.Control
+              type="tel"
+              name="phone"
+              required
+              value={this.state.phone}
+              onChange={this.handleChange}
+            />
+          </Form.Group>
+          <Form.Group controlId="formTextArea">
+            <Form.Label> Message</Form.Label>
+            <Form.Control
+              as="textarea"
+              rows="3"
+              name="message"
+              value={this.state.message}
+              onChange={this.handleChange}
+              placeholder="Post some lorem ipsum here"
+              required
+            />
+          </Form.Group>
+          <Button variant="primary" type="submit">
+            Request an appointment
+          </Button>
+        </Form>
+      </div>
     );
   }
 }
