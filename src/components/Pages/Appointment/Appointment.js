@@ -91,8 +91,8 @@ class Appointment extends Component {
               required
             />
           </Form.Group>
-          <Button variant="primary" type="submit">
-            Request an appointment
+          <Button className="appointment-btn" type="submit">
+            REQUEST AN APPOINTMENT
           </Button>
         </Form>
       </div>
