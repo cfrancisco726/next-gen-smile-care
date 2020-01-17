@@ -5,6 +5,14 @@
   height: 500px;
 }
 
+.comments-carousel h3 {
+  color: #4b7c9c;
+}
+
+.comments-carousel p {
+  color: #4b7c9c;
+}
+
 .comments-carousel h1 {
   line-height: 100px;
   margin: 0;
