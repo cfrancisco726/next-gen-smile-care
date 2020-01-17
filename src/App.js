@@ -5,10 +5,10 @@ import Backdrop from './components/Backdrop/Backdrop'
 import Landing from './components/Pages/Landing/Landing'
 import About from './components/Pages/About/About'
 import Services from './components/Pages/Services/Services';
-import Contact from './components/Pages/Contact/Contact';
 import Appointment from './components/Pages/Appointment/Appointment'
 import Footer from './components/Footer/Footer'
 import ThankYou from './components/Pages/ThankYou/ThankYou'
+import ScrollToTop from './components/ScrollToTop'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -34,6 +34,7 @@ class App extends Component {
     }
     return (
       <Router>
+        <ScrollToTop />
         <div style={{height: '100%'}}>
           <Toolbar  drawerClickHandler={this.drawerToggleClickHandler}/> 
           <SideDrawer show={this.state.sideDrawerOpen} click={this.backdropClickHandler}/>
@@ -43,7 +44,6 @@ class App extends Component {
             <Route exact path="/"  component={Landing} /> 
             <Route exact path="/about"  component={About} /> 
             <Route exact path="/services" component={Services} /> 
-            <Route exact path="/contact" component={Contact} /> 
             <Route exact path="/appointment" component={Appointment} /> 
             <Route exact path="/thank_you" component={ThankYou} /> 
           </main>

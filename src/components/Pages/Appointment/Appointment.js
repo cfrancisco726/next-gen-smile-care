@@ -57,7 +57,6 @@ class Appointment extends Component {
             <Form.Label>Your name*</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Name"
               name="name"
               required
               value={this.state.name}
