@@ -8,6 +8,7 @@ import Services from './components/Pages/Services/Services';
 import Appointment from './components/Pages/Appointment/Appointment'
 import Footer from './components/Footer/Footer'
 import ThankYou from './components/Pages/ThankYou/ThankYou'
+import Error from './components/Pages/Error/Error'
 import ScrollToTop from './components/ScrollToTop'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -46,6 +47,7 @@ class App extends Component {
             <Route exact path="/services" component={Services} /> 
             <Route exact path="/appointment" component={Appointment} /> 
             <Route exact path="/thank_you" component={ThankYou} /> 
+            <Route exact path="/error" component={Error} /> 
           </main>
           </Switch>
           <Footer/>

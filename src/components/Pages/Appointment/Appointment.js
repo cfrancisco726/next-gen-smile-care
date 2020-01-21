@@ -30,7 +30,6 @@ class Appointment extends Component {
       phone_num: this.state.phone
     });
     console.log("submit");
-    this.props.history.push(`/thank_you`)
   }
 
   sendFeedback(templateId, variables) {
@@ -38,8 +37,12 @@ class Appointment extends Component {
       .send("nextgensmilecare", templateId, variables)
       .then(res => {
         console.log("Email successfully sent!");
+        this.props.history.push(`/thank_you`)
+
       })
       .catch(err => console.error("failed:", err));
+      this.props.history.push(`/error`)
+
   }
 
   render() {
