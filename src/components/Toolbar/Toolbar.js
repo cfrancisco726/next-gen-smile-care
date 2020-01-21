@@ -11,7 +11,14 @@ const toolbar = props => (
         <DrawerToggleButton click={props.drawerClickHandler} />
       </div>
       <div className="toolbar_logo">
-        <a href="/">THE LOGO</a>
+        <a href="/">
+          <img
+            src={require("../../images/next_gen_smiles_logo.svg")}
+            alt="logo"
+            width="328px"
+            height="30px"
+          />
+        </a>
       </div>
       <div className="spacer" />
       <div className="toolbar_navigation-items">

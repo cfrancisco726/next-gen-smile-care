@@ -41,68 +41,71 @@ class Appointment extends Component {
 
       })
       .catch(err => console.error("failed:", err));
-      this.props.history.push(`/error`)
-
   }
 
   render() {
     return (
       <div className="appointment-container">
-        <div>
-          <img
-            src={require("../../../images/our_office.jpg")}
-            alt="our_office"
-          />
+        <section className="appointment-header">
+        <div className="appointment-header-txt">
+          <h1>
+            <span>WAITING TO MEET</span>
+            <br />
+            <span>YOUR NEXT SMILE</span>
+          </h1>
         </div>
-        <Form onSubmit={this.handleSubmit} className="appointment-form">
-          <h1>REQUEST AN APPOINTMENT</h1>
-          <Form.Group controlId="formName">
-            <Form.Label>Your name*</Form.Label>
-            <Form.Control
-              type="text"
-              name="name"
-              required
-              value={this.state.name}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Control.Feedback></Form.Control.Feedback>
-          <Form.Group controlId="formEmail">
-            <Form.Label>Email*</Form.Label>
-            <Form.Control
-              type="email"
-              name="email"
-              required
-              value={this.state.email}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group controlId="formPhone">
-            <Form.Label>phone number</Form.Label>
-            <Form.Control
-              type="tel"
-              name="phone"
-              required
-              value={this.state.phone}
-              onChange={this.handleChange}
-            />
-          </Form.Group>
-          <Form.Group controlId="formTextArea">
-            <Form.Label> Message</Form.Label>
-            <Form.Control
-              as="textarea"
-              rows="3"
-              name="message"
-              value={this.state.message}
-              onChange={this.handleChange}
-              placeholder="Post some lorem ipsum here"
-              required
-            />
-          </Form.Group>
-          <Button className="appointment-btn" type="submit">
-            Request an appointment
-          </Button>
-        </Form>
+        </section>
+        <section>
+          <Form onSubmit={this.handleSubmit} className="appointment-form">
+            <h1>REQUEST AN APPOINTMENT</h1>
+            <Form.Group controlId="formName">
+              <Form.Label>Your name*</Form.Label>
+              <Form.Control
+                type="text"
+                name="name"
+                required
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Control.Feedback></Form.Control.Feedback>
+            <Form.Group controlId="formEmail">
+              <Form.Label>Email*</Form.Label>
+              <Form.Control
+                type="email"
+                name="email"
+                required
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="formPhone">
+              <Form.Label>phone number</Form.Label>
+              <Form.Control
+                type="tel"
+                name="phone"
+                required
+                value={this.state.phone}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="formTextArea">
+              <Form.Label> Message</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows="3"
+                name="message"
+                value={this.state.message}
+                onChange={this.handleChange}
+                placeholder=""
+                required
+              />
+            </Form.Group>
+            <Button className="appointment-btn" type="submit">
+              Request an appointment
+            </Button>
+          </Form>
+        </section>
       </div>
     );
   }

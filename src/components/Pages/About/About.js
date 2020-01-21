@@ -6,11 +6,12 @@ function About() {
   return (
     <div className="about-container">
       <section className="about-header">
-        <div>
-          <img
-            src={require("../../../images/our_office.jpg")}
-            alt="our_office"
-          />
+        <div className="about-header-txt">
+          <h1>
+            <span>SCIENCE-BASED</span>
+            <br />
+            <span>EXPERTISE</span>
+          </h1>
         </div>
       </section>
       <section className="our-office-row">
@@ -49,9 +50,7 @@ function About() {
         </div>
         <div className="about-approach-btn">
           <Link to="/services">
-            <button type="button">
-              View All Services
-            </button>
+            <button type="button">View All Services</button>
           </Link>
         </div>
       </section>

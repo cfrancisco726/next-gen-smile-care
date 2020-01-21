@@ -68,7 +68,7 @@
 }
 
 .services-container button:hover {
-  background-color: grey;
+  background-color: #b1467e;
 }
 
 @media only screen and (max-width: 660px) {

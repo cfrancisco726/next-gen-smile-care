@@ -1,9 +1,30 @@
 .appointment-container {
   background-color: #69b0bc;
 }
-.appointment-container img {
-  height: 370px;
+.appointment-header {
+  height: 65vh;
+  background-image: url("../../../images/hero_3.0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  padding-top: 1%;
   width: 100%;
+}
+
+.appointment-header-txt h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 8em;
+  line-height: 0.8em;
+  margin-top: 10px;
+}
+.appointment-header span:nth-child(1) {
+  color: #cf5695;
+}
+
+.appointment-header span:nth-child(3) {
+  color: #4b7c9c;
 }
 .appointment-form {
   width: 650px;
@@ -24,6 +45,6 @@
 }
 
 .appointment-form .appointment-btn:hover {
-  background-color: grey;
-  border: grey;
+  background-color: #b1467e;
+  border: #b1467e;
 }

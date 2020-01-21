@@ -1,10 +1,28 @@
-.about-container {
+.about-header {
+  height: 65vh;
+  background-image: url("../../../images/hero_1.0.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  padding-top: 1%;
   width: 100%;
-  overflow: hidden;
 }
-.about-header img {
-  height: 370px;
-  width: 100%;
+
+.about-header-txt h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 8em;
+  line-height: 0.8em;
+  margin-top: 10px;
+}
+.about-header-txt span:nth-child(1) {
+  color: #4b7c9c;
+}
+
+.about-header-txt span:nth-child(3) {
+  color: #cf5695;
 }
 
 .our-office-row {

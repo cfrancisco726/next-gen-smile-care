@@ -10,7 +10,7 @@ const testimonials = props => (
       <Carousel.Item>
         <img
           src={require("../../../images/carousel_bg.jpg")}
-          alt="jane-profile"
+          alt="slide-1"
           width={500}
           height={200}
         />
@@ -29,7 +29,7 @@ const testimonials = props => (
       <Carousel.Item>
         <img
           src={require("../../../images/carousel_bg.jpg")}
-          alt="jane-profile"
+          alt="slide-2"
           width={500}
           height={200}
         />
@@ -47,7 +47,7 @@ const testimonials = props => (
       <Carousel.Item>
         <img
           src={require("../../../images/carousel_bg.jpg")}
-          alt="carousel-bg"
+          alt="slide-3"
           width={500}
           height={200}
         />
