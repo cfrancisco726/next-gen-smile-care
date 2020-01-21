@@ -9,7 +9,7 @@ const testimonials = props => (
     <Carousel>
       <Carousel.Item>
         <img
-          src={require("../../../images/dr-jane.jpg")}
+          src={require("../../../images/carousel_bg.jpg")}
           alt="jane-profile"
           width={500}
           height={200}
@@ -28,7 +28,7 @@ const testimonials = props => (
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={require("../../../images/dr-jane.jpg")}
+          src={require("../../../images/carousel_bg.jpg")}
           alt="jane-profile"
           width={500}
           height={200}
@@ -46,8 +46,8 @@ const testimonials = props => (
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={require("../../../images/dr-jane.jpg")}
-          alt="jane-profile"
+          src={require("../../../images/carousel_bg.jpg")}
+          alt="carousel-bg"
           width={500}
           height={200}
         />
@@ -63,7 +63,7 @@ const testimonials = props => (
       </Carousel.Item>
       <Carousel.Item>
         <img
-          src={require("../../../images/dr-jane.jpg")}
+          src={require("../../../images/carousel_bg.jpg")}
           alt="jane-profile"
           width={500}
           height={200}

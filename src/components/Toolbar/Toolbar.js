@@ -23,7 +23,7 @@ const toolbar = props => (
             <li>services</li>
           </Link>
           <Link to="/appointment">
-            <li>Request an Appointment</li>
+            <button type="button">Request Appointment</button>
           </Link>
         </ul>
       </div>

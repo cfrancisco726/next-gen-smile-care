@@ -49,6 +49,13 @@
   color: grey;
 }
 
+.toolbar_navigation-items button {
+  background: #cf5695;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .toolbar_navigation-items {
     display: none;
