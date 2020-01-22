@@ -55,7 +55,7 @@ class Appointment extends Component {
           </h1>
         </div>
         </section>
-        <section>
+        <section className="form-container">
           <Form onSubmit={this.handleSubmit} className="appointment-form">
             <h1>REQUEST AN APPOINTMENT</h1>
             <Form.Group controlId="formName">
@@ -80,7 +80,7 @@ class Appointment extends Component {
               />
             </Form.Group>
             <Form.Group controlId="formPhone">
-              <Form.Label>phone number</Form.Label>
+              <Form.Label>phone number*</Form.Label>
               <Form.Control
                 type="tel"
                 name="phone"
@@ -90,7 +90,7 @@ class Appointment extends Component {
               />
             </Form.Group>
             <Form.Group controlId="formTextArea">
-              <Form.Label> Message</Form.Label>
+              <Form.Label> Message*</Form.Label>
               <Form.Control
                 as="textarea"
                 rows="3"
