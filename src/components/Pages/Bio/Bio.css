@@ -1,0 +1,54 @@
+.intro-bio {
+  background: #4b7c9c;
+  color: white;
+  text-align: center;
+  font-family: "Red Hat Text", sans-serif;
+  width: 100%;
+}
+/* @media only screen and (max-width: 970px) {
+  .intro-bio {
+    flex-direction: column;
+  }
+} */
+
+.intro-bio-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.intro-bio-row img {
+  height: auto;
+  width: 100%;
+}
+.intro-bio-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+
+.intro-bio-copy {
+  text-align: center;
+  word-wrap: break-word;
+  padding: 10%;
+}
+.intro-bio button {
+  background: #69b0bc;
+  border: none;
+  color: white;
+  height: 50px;
+  width: 260px;
+  cursor: pointer;
+}
+
+.intro-bio button:hover {
+  background-color: grey;
+}
+
+@media only screen and (max-width: 660px) {
+  .intro-bio button {
+    height: 25px;
+    width: 130px;
+  }
+}

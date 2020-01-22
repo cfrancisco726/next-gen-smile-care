@@ -1,0 +1,106 @@
+.about-header {
+  height: 65vh;
+  background-image: url("../../../images/hero_1.0.jpg");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  padding-top: 1%;
+  width: 100%;
+  height: 500px;
+}
+
+@media only screen and (max-width: 660px) {
+  .about-header {
+    height: 20vh;
+  }
+}
+
+.about-header-txt h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 6em;
+  line-height: 0.8em;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+@media only screen and (max-width: 660px) {
+  .about-header-txt h1 {
+    font-size: 1.5em;
+    margin-top: 50px;
+  }
+}
+.about-header-txt span:nth-child(1) {
+  color: #4b7c9c;
+}
+
+.about-header-txt span:nth-child(3) {
+  color: #cf5695;
+}
+
+.our-office-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+@media only screen and (max-width: 660px) {
+  .our-office-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+.our-office-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  color: #69b0bc;
+}
+
+.our-office-copy {
+  text-align: left;
+  width: 100%;
+  padding: 10%;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.our-office-img img {
+  width: 100%;
+  padding: 10%;
+}
+
+.about-approach {
+  margin: 5% 10% 10% 5%;
+  color: #69b0bc;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.about-approach-copy {
+  text-align: left;
+}
+.about-approach-btn {
+  text-align: center;
+}
+.about-approach-btn button {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  background: #1fb0c8;
+  border: none;
+  height: 50px;
+  width: 260px;
+  cursor: pointer;
+}
+
+.about-quote {
+  text-align: center;
+  background-color: #69b0bc;
+  color: white;
+  padding: 10%;
+}

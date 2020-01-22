@@ -1,35 +1,72 @@
-.appointment-form {
-  font-family: ariel;
-  max-width: 500px;
-  margin: 3rem auto;
-  padding: 5px;
-  border: none;
+.appointment-container {
+  background-color: #69b0bc;
 }
+.appointment-header {
+  background-image: url("../../../images/hero_3.0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
 
-label {
-  display: block;
-  padding: 10px;
-  font-size: 14px;
-}
-
-input,
-textarea {
-  display: block;
+  padding-top: 1%;
+  height: 500px;
   width: 100%;
-  border-radius: 5px;
 }
 
-.btn-submit {
-  border: 0;
-  background: black;
+@media only screen and (max-width: 660px) {
+  .appointment-header {
+    height: 20vh;
+  }
+}
+
+.appointment-header-txt h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 8em;
+  line-height: 0.8em;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 660px) {
+  .appointment-header-txt h1 {
+    font-size: 1.5em;
+    margin-top: 50px;
+  }
+}
+.appointment-header span:nth-child(1) {
+  color: #cf5695;
+}
+
+.appointment-header span:nth-child(3) {
+  color: #4b7c9c;
+}
+
+.appointment-form {
+  width: 650px;
+  margin: auto;
+  padding: 15px;
+  border: none;
   color: white;
-  padding: 0.5rem;
-  width: 30%;
-  margin: 1rem 0;
-  width: auto;
-  cursor: pointer;
+  font-family: "Montserrat Semibold";
 }
 
-.btn-submit:hover {
-  background: grey;
+@media only screen and (max-width: 660px) {
+  .appointment-form {
+    width: 100%;
+    padding: 10%;
+  }
+}
+
+.appointment-form h1 {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.appointment-form .appointment-btn {
+  background-color: #cf5695;
+  border: #cf5695;
+}
+
+.appointment-form .appointment-btn:hover {
+  background-color: #b1467e;
+  border: #b1467e;
 }

@@ -6,7 +6,7 @@ const footer = props => (
   <footer className="footer-container">
     <div className="hours">
       <ul>
-        <li>Office Hours</li>
+        <li>OFFICE HOURS</li>
         <li>Mon 9:00 am - 5:00 pm</li>
         <li>Tues 9:00 am - 5:00 pm</li>
         <li>Wed 9:00 am - 5:00 pm</li>
@@ -16,7 +16,7 @@ const footer = props => (
     </div>
     <div className="contact">
       <ul>
-        <li>Contact Us</li>
+        <li>CONTACT US</li>
         <li> 83-48 Langdale Street</li>
         <li> New Hyde Park, NY 11040</li>
         <li>917 555-555</li>

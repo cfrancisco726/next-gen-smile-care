@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import "./Appointment.css";
 
 class Appointment extends Component {
@@ -11,14 +12,15 @@ class Appointment extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleChange(event) {
+  handleChange = event => {
     const { value } = event.target;
 
     this.setState({ [event.target.name]: value });
     console.log("handle");
   }
 
-  handleSubmit(event) {
+  handleSubmit = event => {
+    event.preventDefault();
     const templateId = "template_qWttzqDG";
 
     this.sendFeedback(templateId, {
@@ -35,64 +37,76 @@ class Appointment extends Component {
       .send("nextgensmilecare", templateId, variables)
       .then(res => {
         console.log("Email successfully sent!");
+        this.props.history.push(`/thank_you`)
+
       })
       .catch(err => console.error("failed:", err));
   }
 
   render() {
     return (
-      <form className="appointment-form">
-        <h1>Request an Appointment</h1>
-        <label>
-          Your name*
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            value={this.state.name}
-            onChange={this.handleChange}
-          />
-        </label>
-        <label>
-          Email*
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            value={this.state.email}
-            onChange={this.handleChange}
-          />
-        </label>
-        <label>
-          phone
-          <input
-            type="tel"
-            id="phone"
-            name="phone"
-            value={this.state.phone}
-            onChange={this.handleChange}
-          />
-        </label>
-        <label>
-          Message
-          <textarea
-            id="message"
-            name="message"
-            value={this.state.message}
-            onChange={this.handleChange}
-            placeholder="Post some lorem ipsum here"
-            required
-          />
-        </label>
-        <input
-          type="button"
-          value="Request Appointment"
-          className="btn btn-submit"
-          onClick={this.handleSubmit}
-        />
-      </form>
+      <div className="appointment-container">
+        <section className="appointment-header">
+        <div className="appointment-header-txt">
+          <h1>
+            <span>WAITING TO MEET</span>
+            <br />
+            <span>YOUR NEXT SMILE</span>
+          </h1>
+        </div>
+        </section>
+        <section className="form-container">
+          <Form onSubmit={this.handleSubmit} className="appointment-form">
+            <h1>REQUEST AN APPOINTMENT</h1>
+            <Form.Group controlId="formName">
+              <Form.Label>Your name*</Form.Label>
+              <Form.Control
+                type="text"
+                name="name"
+                required
+                value={this.state.name}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Control.Feedback></Form.Control.Feedback>
+            <Form.Group controlId="formEmail">
+              <Form.Label>Email*</Form.Label>
+              <Form.Control
+                type="email"
+                name="email"
+                required
+                value={this.state.email}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="formPhone">
+              <Form.Label>phone number*</Form.Label>
+              <Form.Control
+                type="tel"
+                name="phone"
+                required
+                value={this.state.phone}
+                onChange={this.handleChange}
+              />
+            </Form.Group>
+            <Form.Group controlId="formTextArea">
+              <Form.Label> Message*</Form.Label>
+              <Form.Control
+                as="textarea"
+                rows="3"
+                name="message"
+                value={this.state.message}
+                onChange={this.handleChange}
+                placeholder=""
+                required
+              />
+            </Form.Group>
+            <Button className="appointment-btn" type="submit">
+              Request an appointment
+            </Button>
+          </Form>
+        </section>
+      </div>
     );
   }
 }
