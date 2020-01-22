@@ -44,19 +44,25 @@
 }
 
 .toolbar_navigation-items a:hover,
-.toolbar_navigation-items a:active {
+.toolbar_navigation-items a:focus {
   color: grey;
 }
 
 .toolbar_navigation-items button {
-  background: #cf5695;
-  border: none;
+  background-color: #cf5695;
+  outline: none;
+  border: 0;
   color: white;
   cursor: pointer;
 }
 
 .toolbar_navigation-items button:hover {
   background-color: #b1467e;
+}
+
+.toolbar_navigation-items button:focus {
+  background-color: #b1467e;
+  outline: none;
 }
 
 @media (max-width: 768px) {

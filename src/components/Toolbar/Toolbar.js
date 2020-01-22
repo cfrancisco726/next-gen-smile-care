@@ -30,7 +30,7 @@ const toolbar = props => (
             <li>services</li>
           </Link>
           <Link to="/appointment">
-            <button type="button">Request Appointment</button>
+            <button type="button">Request an Appointment</button>
           </Link>
         </ul>
       </div>

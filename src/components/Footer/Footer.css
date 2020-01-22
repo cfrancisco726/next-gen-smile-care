@@ -26,12 +26,12 @@
   padding: 10px;
 }
 
-.hours h3 {
-  margin: 0;
+.hours li:nth-child(1) {
+  font-size: 1.5em;
 }
 
-.contact h3 {
-  margin: 0;
+.contact li:nth-child(1) {
+  font-size: 1.5em;
 }
 
 .gmap iframe {
