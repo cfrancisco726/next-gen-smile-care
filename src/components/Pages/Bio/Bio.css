@@ -5,11 +5,11 @@
   font-family: "Red Hat Text", sans-serif;
   width: 100%;
 }
-/* @media only screen and (max-width: 970px) {
+@media only screen and (max-width: 970px) {
   .intro-bio {
     flex-direction: column;
   }
-} */
+}
 
 .intro-bio-row {
   display: flex;

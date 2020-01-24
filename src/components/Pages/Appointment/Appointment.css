@@ -9,7 +9,7 @@
   box-sizing: border-box;
 
   padding-top: 1%;
-  height: 500px;
+  height: 380px;
   width: 100%;
 }
 
@@ -21,7 +21,7 @@
 
 .appointment-header-txt h1 {
   font-family: "Red Hat Display", sans-serif;
-  font-size: 8em;
+  font-size: 6em;
   line-height: 0.8em;
   margin-top: 100px;
   margin-left: 5%;
