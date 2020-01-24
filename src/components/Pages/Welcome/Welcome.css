@@ -21,18 +21,23 @@
   display: block;
   flex-direction: column;
   align-items: left;
+  margin: 4rem 0 0 4rem;
+}
+
+@media only screen and (max-width: 660px) {
+  .welcome-greeting {
+    margin: 2rem 0 0 2rem;
+  }
 }
 .welcome-greeting h1 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 8em;
   line-height: 0.8em;
-  margin: 4rem 0 0 4rem;
 }
 
 @media only screen and (max-width: 660px) {
   .welcome-greeting h1 {
     font-size: 2.5em;
-    margin-top: 20px;
   }
 }
 
@@ -60,13 +65,13 @@
 }
 
 .welcome-appt-btn:hover {
-  background-color: grey;
+  background-color: #1793a8;
 }
 
 @media only screen and (max-width: 660px) {
   .welcome-appt-btn {
-    height: 25px;
-    width: 130px;
-    font-size: 0.1em;
+    height: 30px;
+    width: 200px;
+    font-size: 0.8em;
   }
 }

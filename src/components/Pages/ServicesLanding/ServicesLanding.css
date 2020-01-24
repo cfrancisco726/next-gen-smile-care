@@ -19,6 +19,24 @@
   text-align: center;
 }
 
+@media only screen and (max-width: 660px) {
+  .services-title {
+    margin: 0 10% 5% 10%;
+  }
+
+  .services-container h1 {
+    font-size: 1.25em;
+  }
+
+  .services-item {
+    font-size: 1em;
+  }
+
+  .services-item h4 {
+    font-size: 1em;
+  }
+}
+
 .services-row {
   display: flex;
   flex-direction: row;
@@ -37,7 +55,7 @@
 
 @media only screen and (max-width: 660px) {
   .services-item {
-    width: 80%;
+    width: 100%;
     margin-top: 10px;
   }
 }
@@ -46,6 +64,7 @@
   display: inline-block;
   vertical-align: top;
   max-width: 50px;
+  height: 35px;
 }
 .services-text {
   display: inline-block;
@@ -73,7 +92,8 @@
 
 @media only screen and (max-width: 660px) {
   .services-container button {
-    height: 25px;
-    width: 130px;
+    height: 30px;
+    width: 180px;
+    font-size: 0.8em;
   }
 }
