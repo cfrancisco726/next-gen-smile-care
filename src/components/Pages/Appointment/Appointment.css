@@ -27,6 +27,12 @@
   margin-left: 5%;
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 661px) {
+  .appointment-header-txt h1 {
+    font-size: 3.5em;
+  }
+}
+
 @media only screen and (max-width: 660px) {
   .appointment-header-txt h1 {
     font-size: 1.5em;
@@ -55,6 +61,9 @@
     width: 100%;
     padding: 10%;
   }
+  .appointment-form h1 {
+    font-size: 1.2em;
+  }
 }
 
 .appointment-form h1 {
@@ -64,6 +73,14 @@
 .appointment-form .appointment-btn {
   background-color: #cf5695;
   border: #cf5695;
+}
+
+@media only screen and (max-width: 660px) {
+  .appointment-form .appointment-btn {
+    height: 25px;
+    width: 220px;
+    font-size: 0.8em;
+  }
 }
 
 .appointment-form .appointment-btn:hover {
