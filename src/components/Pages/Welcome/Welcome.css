@@ -7,31 +7,38 @@
   box-sizing: border-box;
 
   padding-top: 1%;
-  width: 100%;
+  max-width: 100%;
   height: 500px;
 }
 
 @media only screen and (max-width: 660px) {
   .welcome-container {
-    height: 20vh;
+    height: 30vh;
+  }
+}
+
+.welcome-greeting {
+  display: block;
+  flex-direction: column;
+  align-items: left;
+  margin: 4rem 0 0 4rem;
+}
+
+@media only screen and (max-width: 660px) {
+  .welcome-greeting {
+    margin: 2rem 0 0 2rem;
   }
 }
 .welcome-greeting h1 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 8em;
   line-height: 0.8em;
-  margin-top: 10px;
-  margin-left: 10%;
 }
 
 @media only screen and (max-width: 660px) {
   .welcome-greeting h1 {
     font-size: 2.5em;
-    margin-top: 20px;
   }
-}
-
-.welcome-greeting h1 {
 }
 
 .welcome-greeting span:nth-child(1) {
@@ -53,19 +60,18 @@
   border: none;
   height: 50px;
   width: 260px;
-  margin-left: 10%;
-  margin-bottom: 10%;
+  margin-top: 20px;
   cursor: pointer;
 }
 
 .welcome-appt-btn:hover {
-  background-color: grey;
+  background-color: #1793a8;
 }
 
 @media only screen and (max-width: 660px) {
   .welcome-appt-btn {
-    height: 25px;
-    width: 130px;
-    font-size: 0.1em;
+    height: 30px;
+    width: 200px;
+    font-size: 0.8em;
   }
 }

@@ -24,13 +24,15 @@ const toolbar = props => (
       <div className="toolbar_navigation-items">
         <ul>
           <Link to="/about">
-            <li>About</li>
+            <li>ABOUT</li>
           </Link>
           <Link to="/services">
-            <li>services</li>
+            <li>SERVICES</li>
           </Link>
           <Link to="/appointment">
-            <button type="button">Request an Appointment</button>
+            <li>
+              <button type="button">Request an Appointment</button>
+            </li>
           </Link>
         </ul>
       </div>

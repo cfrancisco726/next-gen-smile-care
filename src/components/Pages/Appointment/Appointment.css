@@ -9,7 +9,7 @@
   box-sizing: border-box;
 
   padding-top: 1%;
-  height: 500px;
+  height: 380px;
   width: 100%;
 }
 
@@ -21,15 +21,21 @@
 
 .appointment-header-txt h1 {
   font-family: "Red Hat Display", sans-serif;
-  font-size: 8em;
+  font-size: 6em;
   line-height: 0.8em;
   margin-top: 100px;
   margin-left: 5%;
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 661px) {
+  .appointment-header-txt h1 {
+    font-size: 3.5em;
+  }
+}
+
 @media only screen and (max-width: 660px) {
   .appointment-header-txt h1 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     margin-top: 50px;
   }
 }
@@ -47,13 +53,16 @@
   padding: 15px;
   border: none;
   color: white;
-  font-family: "Montserrat Semibold";
+  font-family: "Montserrat Semibold", sans-serif;
 }
 
 @media only screen and (max-width: 660px) {
   .appointment-form {
     width: 100%;
     padding: 10%;
+  }
+  .appointment-form h1 {
+    font-size: 1.2em;
   }
 }
 
@@ -62,8 +71,19 @@
 }
 
 .appointment-form .appointment-btn {
+  font-family: "Montserrat", sans-serif;
+  height: 50px;
+  width: 260px;
   background-color: #cf5695;
   border: #cf5695;
+}
+
+@media only screen and (max-width: 660px) {
+  .appointment-form .appointment-btn {
+    height: 30px;
+    width: 200px;
+    font-size: 0.8em;
+  }
 }
 
 .appointment-form .appointment-btn:hover {

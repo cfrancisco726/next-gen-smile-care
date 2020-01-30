@@ -9,17 +9,17 @@ const bio = props => (
         <img src={require("../../../images/dr-jane.jpg")} alt="jane-profile" />
       </div>
       <div className="intro-bio-column">
-        <div className=".intro-bio-copy">
+        <div className="intro-bio-copy">
           <h1>DR. JANE JAROONNARM</h1>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s
           </p>
+            <Link to="/services">
+            <button type="button">View All Services</button>
+          </Link>
         </div>
-        <Link to="/services">
-          <button type="button">View All Services</button>
-        </Link>
       </div>
     </div>
   </section>
