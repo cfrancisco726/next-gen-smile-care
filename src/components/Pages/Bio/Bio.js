@@ -12,11 +12,17 @@ const bio = props => (
         <div className="intro-bio-copy">
           <h1>DR. JANE JAROONNARM</h1>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s
+            Jane Jaroonnarm, DDS, specializes in cosmetic dentistry and general
+            dentistry. She treats men, women, teens, and children at Midtown
+            Dental Care in New York City with warmth and compassion. Having
+            earned her DDS in 2006 from Tufts University in Medford,
+            Massachusetts, Dr Jaroonnarm provides you with aesthetic
+            improvements, such as Invisalign® teeth straightening, orthodontic
+            braces, dental veneers, and teeth whitening. She also fills cavities
+            and performs other general dental care services, including
+            professional cleaning, examinations, X-rays, and bonding.
           </p>
-            <Link to="/services">
+          <Link to="/services">
             <button type="button">View All Services</button>
           </Link>
         </div>

@@ -30,23 +30,26 @@
 .intro-bio-copy {
   text-align: center;
   word-wrap: break-word;
-  padding: 10%;
+  padding: 5%;
 }
 
 .intro-bio-copy h1 {
-  font-size: 2em;
+  font-size: 3em;
   font-family: "Red Hat Text", sans-serif;
 }
 
 .intro-bio-copy p {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.35em;
+  line-height: 1.75em;
 }
 .intro-bio button {
   background: #69b0bc;
   border: none;
   color: white;
-  height: 50px;
-  width: 260px;
+  font-size: 1.35em;
+  height: 80px;
+  width: 300px;
   cursor: pointer;
 }
 
@@ -63,5 +66,9 @@
 
   .intro-bio-copy h1 {
     font-size: 1.75em;
+  }
+
+  .intro-bio-copy p {
+    font-size: 1em;
   }
 }

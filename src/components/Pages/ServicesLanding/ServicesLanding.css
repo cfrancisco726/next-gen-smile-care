@@ -97,11 +97,13 @@
   }
 }
 .services-landing-container button {
+  font-family: "Montserrat", sans-serif;
   background: #cf5695;
   border: none;
   color: white;
-  height: 50px;
-  width: 260px;
+  font-size: 1.35em;
+  height: 80px;
+  width: 300px;
   cursor: pointer;
   margin-bottom: 5%;
 }
