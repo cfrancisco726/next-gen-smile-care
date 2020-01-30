@@ -7,6 +7,7 @@ import Bio from "../Bio/Bio";
 import Testimonials from "../Testimonials/Testimonials";
 import ThankYou from "../ThankYou/ThankYou";
 
+
 class Landing extends Component {
   render() {
     return (

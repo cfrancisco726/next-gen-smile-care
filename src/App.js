@@ -11,7 +11,7 @@ import ThankYou from './components/Pages/ThankYou/ThankYou'
 import Error from './components/Pages/Error/Error'
 import ScrollToTop from './components/ScrollToTop'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 class App extends Component {
