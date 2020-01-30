@@ -17,13 +17,18 @@
 @media only screen and (max-width: 750px) {
   .footer-container {
     flex-direction: column;
-    height: 800px;
+    height: 600px;
   }
 }
 
 .footer-container ul {
   list-style-type: none;
-  padding: 10px;
+  padding-right: 10px;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.footer-container li {
+  font-family: "Montserrat", sans-serif;
 }
 
 .hours li:nth-child(1) {
@@ -36,5 +41,11 @@
 
 .gmap iframe {
   margin: 0;
-  padding: 0;
+  padding-left: 30px;
+}
+
+@media only screen and (max-width: 750px) {
+  .gmap iframe {
+    padding-top: 20px;
+  }
 }

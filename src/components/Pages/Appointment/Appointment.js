@@ -90,7 +90,7 @@ class Appointment extends Component {
               />
             </Form.Group>
             <Form.Group controlId="formTextArea">
-              <Form.Label> Message*</Form.Label>
+              <Form.Label> Message</Form.Label>
               <Form.Control
                 as="textarea"
                 rows="3"
@@ -98,7 +98,6 @@ class Appointment extends Component {
                 value={this.state.message}
                 onChange={this.handleChange}
                 placeholder=""
-                required
               />
             </Form.Group>
             <Button className="appointment-btn" type="submit">

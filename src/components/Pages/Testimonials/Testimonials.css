@@ -2,22 +2,31 @@
   background-color: #dbeee8;
   color: #4b7c9c;
   text-align: center;
-  height: 500px;
+  height: 300px;
+  padding-top: 50px;
 }
 
 .comments-carousel h3 {
+  font-family: "Montserrat", sans-serif;
   color: #4b7c9c;
 }
 
 .comments-carousel p {
+  font-family: "Montserrat", sans-serif;
   color: #4b7c9c;
 }
 
 .comments-carousel h1 {
-  line-height: 100px;
-  margin: 0;
+  font-size: 2em;
+  font-family: "Red Hat Text", sans-serif;
 }
 
 .services-container h3 {
   width: 500px;
+}
+
+@media only screen and (max-width: 660px) {
+  .comments-carousel h1 {
+    font-size: 1.75em;
+  }
 }
