@@ -46,6 +46,127 @@
   color: #1fb0c8;
 }
 .our-services-container {
-  background-color: #fafafa;
-  padding-bottom: 40px;
+  background-color: white;
+  text-align: center;
+  color: #4b7c9c;
+  width: 100%;
+  margin: 0;
+}
+
+.services-title {
+  margin: 0 10% 0 5%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.services-title h1 {
+  font-family: "Red Hat Display", sans-serif;
+  margin-top: 0px;
+  font-size: 3em;
+  line-height: 1.75em;
+}
+
+.services-title p {
+  font-size: 1.35em;
+}
+@media only screen and (max-width: 660px) {
+  .services-title {
+    margin: 0 10% 5% 10%;
+  }
+
+  .services-title h1 {
+    font-size: 1.75em;
+  }
+
+  .services-title p {
+    font-size: 1em;
+  }
+}
+
+.services-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-col {
+  display: block;
+  text-align: center;
+  width: 50%;
+  height: 30%;
+  border-style: none;
+  padding-bottom: 5%;
+}
+
+.services-col img {
+  max-width: 50px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.services-text {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.services-text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.services-text p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.75em;
+  font-size: 1.35em;
+}
+
+@media only screen and (max-width: 660px) {
+  .services-col {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .services-col p {
+    font-size: 1em;
+  }
+
+  .services-col h2 {
+    font-size: 1.5em;
+  }
+  .services-col img {
+    height: 40px;
+  }
+
+  .services-text {
+    width: 90%;
+  }
+}
+.services-container button {
+  font-family: "Montserrat", sans-serif;
+  background: #cf5695;
+  border: none;
+  color: white;
+  font-size: 1.35em;
+  height: 80px;
+  width: 300px;
+  cursor: pointer;
+  margin-bottom: 5%;
+}
+
+.services-container button:hover {
+  background-color: #b1467e;
+}
+
+@media only screen and (max-width: 660px) {
+  .services-container button {
+    height: 30px;
+    width: 180px;
+    font-size: 0.8em;
+    margin-bottom: 10%;
+  }
 }
