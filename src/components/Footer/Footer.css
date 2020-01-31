@@ -39,6 +39,10 @@
   font-size: 1.5em;
 }
 
+.contact li:nth-child(5) {
+  font-weight: 600;
+}
+
 .gmap iframe {
   margin: 0;
   padding-left: 30px;

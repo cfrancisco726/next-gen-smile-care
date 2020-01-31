@@ -7,17 +7,17 @@
 }
 
 .services-title {
-  font-family: "Red Hat Text", sans-serif;
   margin: 0 10% 5% 10%;
   padding-top: 5%;
-  line-height: 1.75em;
   text-align: center;
 }
 
 .services-title h1 {
+  font-family: "Red Hat Text", sans-serif;
   margin-top: 0px;
   padding-top: 40px;
   font-size: 3em;
+  line-height: 1.75em;
 }
 
 .services-title p {

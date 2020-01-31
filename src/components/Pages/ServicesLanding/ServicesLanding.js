@@ -8,7 +8,7 @@ const services_landing = props => (
       <h1>OUR SERVICES</h1>
     </div>
     <div className="services-landing-row">
-      <div className="services-landing-item">
+      <div className="services-landing-col">
         <img src={require("../../../images/cleaning.svg")} alt="cleaning" />
         <div className="services-landing-text">
           <h2>General Dentistry</h2>
@@ -21,7 +21,7 @@ const services_landing = props => (
           </p>
         </div>
       </div>
-      <div className="services-landing-item">
+      <div className="services-landing-col">
         <img src={require("../../../images/invisalign.svg")} alt="invisalign" />
         <div className="services-landing-text">
           <h2>Cosmetic Dentistry</h2>
@@ -33,7 +33,7 @@ const services_landing = props => (
           </p>
         </div>
       </div>
-      <div className="services-landing-item">
+      <div className="services-landing-col">
         <img src={require("../../../images/implant.svg")} alt="impant" />
         <div className="services-landing-text">
           <h2>Pediatric Dentistry</h2>
@@ -46,7 +46,7 @@ const services_landing = props => (
           </p>
         </div>
       </div>
-      <div className="services-landing-item">
+      <div className="services-landing-col">
         <img src={require("../../../images/perio.svg")} alt="perio" />
         <div className="services-landing-text">
           <h2>Dental Implants</h2>
@@ -58,7 +58,7 @@ const services_landing = props => (
           </p>
         </div>
       </div>
-      <div className="services-landing-item">
+      <div className="services-landing-col">
         <img src={require("../../../images/perio.svg")} alt="perio" />
         <div className="services-landing-text">
           <h2>Oral Surgery</h2>
@@ -71,7 +71,7 @@ const services_landing = props => (
           </p>
         </div>
       </div>
-      <div className="services-landing-item">
+      <div className="services-landing-col">
         <img src={require("../../../images/perio.svg")} alt="perio" />
         <div className="services-landing-text">
           <h2>Periodontics</h2>

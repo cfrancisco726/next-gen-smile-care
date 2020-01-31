@@ -7,17 +7,16 @@
 }
 
 .services-landing-title {
-  font-family: "Red Hat Text", sans-serif;
-  margin: 0 10% 5% 10%;
+  margin: 0 10% 0 5%;
   padding-top: 5%;
-  line-height: 1.75em;
   text-align: center;
 }
 
 .services-landing-title h1 {
+  font-family: "Red Hat Display", sans-serif;
   margin-top: 0px;
-  padding-top: 40px;
   font-size: 3em;
+  line-height: 1.75em;
 }
 
 .services-landing-title p {
@@ -43,57 +42,61 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.services-landing-row h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
-}
 
-.services-landing-row p {
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.75em;
-  font-size: 1.35em;
-}
-
-.services-landing-item {
-  display: inline-block;
-  vertical-align: top;
+.services-landing-col {
+  display: block;
+  text-align: center;
   width: 50%;
   height: 30%;
   border-style: none;
   padding-bottom: 5%;
 }
 
-.services-landing-item img {
-  display: inline-block;
-  vertical-align: top;
+.services-landing-col img {
   max-width: 50px;
-  height: 60px;
+  height: 80px;
+  margin-bottom: 20px;
 }
+
 .services-landing-text {
-  display: inline-block;
-  vertical-align: top;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
-  width: 60%;
-  margin-left: 10px;
+  width: 80%;
   word-wrap: break-word;
 }
 
+.services-landing-text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.services-landing-text p {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.75em;
+  font-size: 1.35em;
+}
+
 @media only screen and (max-width: 660px) {
-  .services-landing-item {
+  .services-landing-col {
     width: 100%;
     margin-top: 10px;
   }
 
-  .services-landing-item p {
+  .services-landing-col p {
     font-size: 1em;
   }
 
-  .services-landing-item h2 {
+  .services-landing-col h2 {
     font-size: 1.5em;
   }
-  .services-landing-item img {
+  .services-landing-col img {
     height: 40px;
+  }
+
+  .services-landing-text {
+    width: 90%;
   }
 }
 .services-landing-container button {

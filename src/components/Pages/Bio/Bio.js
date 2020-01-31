@@ -6,7 +6,12 @@ const bio = props => (
   <section className="intro-bio">
     <div className="intro-bio-row">
       <div classsName="intro-bio-column">
-        <img src={require("../../../images/dr-jane.jpg")} alt="jane-profile" />
+        <div className="intro-bio-img">
+          <img
+            src={require("../../../images/dr-jane.jpg")}
+            alt="jane-profile"
+          />
+        </div>
       </div>
       <div className="intro-bio-column">
         <div className="intro-bio-copy">
