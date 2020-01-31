@@ -53,17 +53,18 @@
   padding: 80px 15px 80px 15px;
   border: none;
   color: white;
-  font-family: "Montserrat Semibold", sans-serif;
 }
 
 .appointment-form h1 {
+  font-family: "Red Hat Text", sans-serif;
   font-size: 3em;
+  font-weight: normal;
 }
 
 @media only screen and (max-width: 660px) {
   .appointment-form {
     width: 100%;
-    padding: 40px 10% 10% 10%;
+    padding: 5% 10% 10% 10%;
   }
   .appointment-form h1 {
     font-size: 1.2em;
@@ -71,7 +72,6 @@
 }
 
 .appointment-form h1 {
-  font-family: "Red Hat Text", sans-serif;
 }
 
 .appointment-form .appointment-btn {

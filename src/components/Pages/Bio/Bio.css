@@ -54,6 +54,7 @@
 
 .intro-bio button:hover {
   background-color: #1793a8;
+  outline: none;
 }
 
 @media only screen and (max-width: 660px) {
