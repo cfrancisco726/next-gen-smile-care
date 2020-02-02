@@ -101,7 +101,7 @@ class Appointment extends Component {
               />
             </Form.Group>
             <Button className="appointment-btn" type="submit">
-              Request an appointment
+             Submit
             </Button>
           </Form>
         </section>

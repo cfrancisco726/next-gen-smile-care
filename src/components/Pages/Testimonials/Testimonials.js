@@ -5,7 +5,7 @@ import { Carousel } from "react-bootstrap";
 
 const testimonials = props => (
   <section className="comments-carousel">
-    <h1>Testimonials</h1>
+    <h1>TESTIMONIALS</h1>
     <Carousel>
       <Carousel.Item>
         <img
@@ -52,10 +52,9 @@ const testimonials = props => (
           <p>
             Very nice and professional. I told her I was having tooth pain, and
             she was very thorough with examining my mouth, and talking about
-            possible causes and treatments, small and big. I had a sore in my
-            mouth that she was very careful about not irritating. Any small
-            discomfort I experienced during my cleaning she immediately asked me
-            about and examined. I highly recommend.
+            possible causes and treatments, small and big. Any small discomfort
+            I experienced during my cleaning she immediately asked me about and
+            examined. I highly recommend.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

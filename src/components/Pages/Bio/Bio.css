@@ -1,73 +1,94 @@
-.intro-bio {
+.bio-wrapper {
   background: #4b7c9c;
   color: white;
-  text-align: center;
   width: 100%;
 }
-/* @media only screen and (max-width: 970px) {
-  .intro-bio {
-    flex-direction: column;
-  }
-} */
 
-.intro-bio-row {
+.bio-row {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-
-.intro-bio-column {
-  flex: 50%;
-}
-.intro-bio-img {
-  background-color: #b5c4bf;
-}
-.intro-bio-img img {
-  vertical-align: middle;
   width: 100%;
 }
 
-.intro-bio-copy {
-  text-align: center;
-  word-wrap: break-word;
-  padding: 5%;
+.bio-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
-.intro-bio-copy h1 {
+.bio-column img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1025px) {
+  .bio-row {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+.bio-column:nth-child(1) {
+  background-color: #b3c3c0;
+  justify-content: flex-end;
+}
+
+.bio-column:nth-child(2) {
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+.bio-column-txt {
+  height: auto;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.bio-column-txt h1 {
   font-size: 3em;
   font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
 }
 
-.intro-bio-copy p {
+.bio-column-txt p {
   font-family: "Montserrat", sans-serif;
   font-size: 1.35em;
   line-height: 1.75em;
 }
-.intro-bio button {
+
+.bio-column-btn {
+  text-align: center;
+  padding: 0;
+}
+
+.bio-column-btn button {
   background: #69b0bc;
   border: none;
   color: white;
   font-size: 1.35em;
   height: 80px;
   width: 300px;
-  cursor: pointer;
+  text-align: center;
+  margin-top: 5%;
 }
-
-.intro-bio button:hover {
+.bio-column-btn button :hover {
   background-color: #1793a8;
   outline: none;
 }
 
 @media only screen and (max-width: 660px) {
-  .intro-bio button {
+  .bio-column-btn button {
     height: 30px;
     width: 180px;
     font-size: 0.8em;
   }
-  .intro-bio-copy h1 {
+  .bio-column-txt h1 {
     font-size: 1.75em;
   }
 
-  .intro-bio-copy p {
+  .bio-column-txt p {
     font-size: 1em;
   }
 }

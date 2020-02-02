@@ -8,12 +8,8 @@
 
 .comments-carousel h1 {
   font-family: "Red Hat Text", sans-serif;
+  font-weight: 400;
   font-size: 3em;
-}
-.comments-carousel h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.35em;
-  color: #4b7c9c;
 }
 
 .comments-carousel p {
@@ -23,12 +19,18 @@
   font-family: "Montserrat", sans-serif;
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 661px) {
+  .comments-carousel p {
+    font-size: 1em;
+  }
+}
+
 @media only screen and (max-width: 660px) {
   .comments-carousel h1 {
     font-size: 1.75em;
   }
 
   .comments-carousel p {
-    font-size: 1em;
+    font-size: 0.6em;
   }
 }
