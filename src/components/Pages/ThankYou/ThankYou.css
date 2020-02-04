@@ -1,4 +1,53 @@
-.thank-you {
+.thank-you-header {
+  background-image: url("../../../images/hero_3.0.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+
+  padding-top: 1%;
+  height: 380px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 660px) {
+  .thank-you-header {
+    height: 20vh;
+  }
+}
+
+.thank-you-header-txt h1 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 6em;
+  line-height: 0.8em;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 661px) {
+  .thank-you-header-txt h1 {
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .thank-you-header-txt h1 {
+    font-size: 1.75em;
+    margin-top: 50px;
+  }
+}
+.thank-you-header span:nth-child(1) {
+  color: #cf5695;
+}
+
+.thank-you-header span:nth-child(3) {
+  color: #4b7c9c;
+}
+
+.thank-you-reply {
+  font-family: "Montserrat", sans-serif;
   text-align: center;
-  color: red;
+  padding: 5% 0 5% 0;
+  background-color: #69b0bc;
+  color: white;
 }

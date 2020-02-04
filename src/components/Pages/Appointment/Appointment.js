@@ -21,7 +21,7 @@ class Appointment extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const templateId = "template_qWttzqDG";
+    const templateId = "";
 
     this.sendFeedback(templateId, {
       message_html: this.state.message,
@@ -37,10 +37,12 @@ class Appointment extends Component {
       .send("nextgensmilecare", templateId, variables)
       .then(res => {
         console.log("Email successfully sent!");
-        this.props.history.push(`/thank_you`)
+        this.props.history.push(`/thankyou`)
 
       })
-      .catch(err => console.error("failed:", err));
+      .catch(err => {console.error("failed:", err);
+      this.props.history.push(`/error`)
+    });
   }
 
   render() {

@@ -46,7 +46,7 @@ class App extends Component {
             <Route exact path="/about"  component={About} /> 
             <Route exact path="/services" component={Services} /> 
             <Route exact path="/appointment" component={Appointment} /> 
-            <Route exact path="/thank_you" component={ThankYou} /> 
+            <Route exact path="/thankyou" component={ThankYou} /> 
             <Route exact path="/error" component={Error} /> 
           </main>
           </Switch>
