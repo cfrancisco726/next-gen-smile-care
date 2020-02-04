@@ -1,6 +1,5 @@
 .services-landing-container {
   background-color: #69b0bc;
-  text-align: center;
   color: white;
   width: 100%;
   margin: 0;
@@ -45,18 +44,33 @@
 }
 
 .services-landing-col {
-  display: block;
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 30%;
   border-style: none;
   padding-bottom: 5%;
+  text-align: left;
+}
+.services-landing-header {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
 }
 
-.services-landing-col img {
+.services-landing-header img {
   max-width: 50px;
   height: 80px;
-  margin-bottom: 20px;
+}
+.services-landing-header h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  padding-top: 30px;
+  padding-left: 10px;
 }
 
 .services-landing-text {
@@ -65,13 +79,6 @@
   text-align: left;
   width: 80%;
   word-wrap: break-word;
-}
-
-.services-landing-text h2 {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.5em;
 }
 
 .services-landing-text p {
@@ -83,22 +90,22 @@
 @media only screen and (max-width: 660px) {
   .services-landing-col {
     width: 100%;
-    margin-top: 10px;
+  }
+  .services-landing-header h2 {
+    font-size: 1.3em;
+    padding-top: 5px;
   }
 
-  .services-landing-col p {
+  .services-landing-text p {
     font-size: 1em;
   }
 
-  .services-landing-col h2 {
-    font-size: 1.5em;
-  }
   .services-landing-col img {
     height: 40px;
   }
 
   .services-landing-text {
-    width: 90%;
+    width: 80%;
   }
 }
 .services-landing-container button {
@@ -111,6 +118,7 @@
   width: 300px;
   cursor: pointer;
   margin-bottom: 5%;
+  border-radius: 5px;
 }
 
 .services-landing-container button:hover {

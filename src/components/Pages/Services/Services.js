@@ -19,9 +19,14 @@ const Services = props => {
         </div>
         <div className="services-row">
           <div className="services-col">
-            <img src={require("../../../images/cleaning.svg")} alt="cleaning" />
+            <div className="services-header">
+              <img
+                src={require("../../../images/cleaning.svg")}
+                alt="cleaning"
+              />
+                <h2>General Dentistry</h2>
+            </div>
             <div className="services-text">
-              <h2>General Dentistry</h2>
               <p>
                 General dentistry considers the overall dental health of a
                 patient. A general dentist works to evaluate, diagnose and treat
@@ -33,12 +38,14 @@ const Services = props => {
             </div>
           </div>
           <div className="services-col">
-            <img
-              src={require("../../../images/invisalign.svg")}
-              alt="invisalign"
-            />
-            <div className="services-text">
+            <div className="services-header">
+              <img
+                src={require("../../../images/invisalign.svg")}
+                alt="invisalign"
+              />
               <h2>Cosmetic Dentistry</h2>
+            </div>
+            <div className="services-text">
               <p>
                 For dental treatment that goes beyond dental health to improve
                 the appearance of the teeth and gums. Cosmetic dental care
@@ -49,22 +56,27 @@ const Services = props => {
             </div>
           </div>
           <div className="services-col">
-            <img src={require("../../../images/implant.svg")} alt="impant" />
-            <div className="services-text">
+            <div className="services-header">
+              <img src={require("../../../images/implant.svg")} alt="impant" />
               <h2>Pediatric Dentistry</h2>
+            </div>
+
+            <div className="services-text">
               <p>
                 Good oral health should start at a young age. Our Pediatric
                 dentistry department is dedicated to ensuring that youthful
                 patients have a comfortable, positive dental experience so they
                 can grow up with the confidence that comes from healthy teeth
                 and a glowing smile
-                    </p>
+              </p>
             </div>
           </div>
           <div className="services-col">
-            <img src={require("../../../images/perio.svg")} alt="perio" />
-            <div className="services-text">
+            <div className="services-header">
+              <img src={require("../../../images/perio.svg")} alt="perio" />
               <h2>Dental Implants</h2>
+            </div>
+            <div className="services-text">
               <p>
                 One of many restorative dental procedures, dental implants are
                 artificial teeth that are implanted into the jaw bone to provide
@@ -74,22 +86,26 @@ const Services = props => {
             </div>
           </div>
           <div className="services-col">
-            <img src={require("../../../images/perio.svg")} alt="perio" />
-            <div className="services-text">
+            <div className="services-header">
+              <img src={require("../../../images/perio.svg")} alt="perio" />
               <h2>Oral Surgery</h2>
+            </div>
+            <div className="services-text">
               <p>
                 Sometimes to maintain dental health, surgical methods must be
                 employed. Oral surgeons treat patients who have experienced
                 mouth trauma or infections to restore the proper function and
                 look of their teeth. They also perform wisdom teeth extractions
                 and root canals to maintain dental health.
-                    </p>
+              </p>
             </div>
           </div>
           <div className="services-col">
-            <img src={require("../../../images/perio.svg")} alt="perio" />
-            <div className="services-text">
+            <div className="services-header">
+              <img src={require("../../../images/perio.svg")} alt="perio" />
               <h2>Periodontics</h2>
+            </div>
+            <div className="services-text">
               <p>
                 Park Dental periodontists focus on periodontal treatments to
                 improve oral health. From installing dental implants to working

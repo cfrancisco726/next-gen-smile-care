@@ -164,6 +164,7 @@
   height: 80px;
   width: 300px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .about-approach-btn button:hover {

@@ -9,83 +9,69 @@ const services_landing = props => (
     </div>
     <div className="services-landing-row">
       <div className="services-landing-col">
-        <img src={require("../../../images/cleaning.svg")} alt="cleaning" />
+        <div className="services-landing-header">
+          <img src={require("../../../images/cleaning.svg")} alt="cleaning" />
+          <h2>Cleaning & Whitening</h2>
+        </div>
         <div className="services-landing-text">
-          <h2>General Dentistry</h2>
           <p>
-            General dentistry considers the overall dental health of a patient.
-            A general dentist works to evaluate, diagnose and treat disorders of
-            the gums and teeth while working to maintain oral health through
-            regular cleanings and dental screenings. Some general dentists also
-            work with a specialist to provide more advanced treatment options
+            We provide traditional teeth cleaning and dental bleaching. Teeth
+            whitening is a painless cosmetic dental procedure that takes only
+            minutes in the office and will leave you with bright, radiant teeth
+            so you can show the world your best smile! Most patients only need
+            one visit to uncover the natural beauty of their teeth.
           </p>
         </div>
       </div>
       <div className="services-landing-col">
-        <img src={require("../../../images/invisalign.svg")} alt="invisalign" />
-        <div className="services-landing-text">
-          <h2>Cosmetic Dentistry</h2>
-          <p>
-            For dental treatment that goes beyond dental health to improve the
-            appearance of the teeth and gums. Cosmetic dental care includes
-            access to dental implants, teeth bleaching and teeth straightening
-            options. Boost your self-esteem while improving your smile
-          </p>
-        </div>
-      </div>
-      <div className="services-landing-col">
-        <img src={require("../../../images/implant.svg")} alt="impant" />
-        <div className="services-landing-text">
-          <h2>Pediatric Dentistry</h2>
-          <p>
-            Good oral health should start at a young age. Our Pediatric
-            dentistry department is dedicated to ensuring that youthful patients
-            have a comfortable, positive dental experience so they can grow up
-            with the confidence that comes from healthy teeth and a glowing
-            smile
-          </p>
-        </div>
-      </div>
-      <div className="services-landing-col">
-        <img src={require("../../../images/perio.svg")} alt="perio" />
-        <div className="services-landing-text">
+        <div className="services-landing-header">
+          <img
+            src={require("../../../images/invisalign.svg")}
+            alt="invisalign"
+          />
           <h2>Dental Implants</h2>
+        </div>
+        <div className="services-landing-text">
           <p>
-            One of many restorative dental procedures, dental implants are
-            artificial teeth that are implanted into the jaw bone to provide a
-            supportive structure that replaces lost or chipped teeth so that you
-            can offer the world a confident smile again
+            Don't let a missing tooth leave you feeling self-conscious or
+            unattractive. At Park Dental Care, we offer you the option of
+            replacing chipped, broken or missing teeth with dental implants to
+            restore your smile and bring back the more confident you.
           </p>
         </div>
       </div>
       <div className="services-landing-col">
-        <img src={require("../../../images/perio.svg")} alt="perio" />
+        <div className="services-landing-header">
+          <img src={require("../../../images/implant.svg")} alt="impant" />
+          <h2>Invisalign</h2>
+        </div>
         <div className="services-landing-text">
-          <h2>Oral Surgery</h2>
           <p>
-            Sometimes to maintain dental health, surgical methods must be
-            employed. Oral surgeons treat patients who have experienced mouth
-            trauma or infections to restore the proper function and look of
-            their teeth. They also perform wisdom teeth extractions and root
-            canals to maintain dental health.
+            The age of metal braces is gone. Clear aligners can help straighten
+            your teeth over time, and most people won't even notice that you've
+            got them. Sold under many brand names (Orthoclear, Invisalign,
+            ClearCorrect), transparent braces is a teeth straightening option
+            that can keep you smiling.
           </p>
         </div>
       </div>
       <div className="services-landing-col">
-        <img src={require("../../../images/perio.svg")} alt="perio" />
+        <div className="services-landing-header">
+          <img src={require("../../../images/perio.svg")} alt="perio" />
+          <h2>Periodontal Treatment</h2>
+        </div>
         <div className="services-landing-text">
-          <h2>Periodontics</h2>
           <p>
-            Park Dental periodontists focus on periodontal treatments to improve
-            oral health. From installing dental implants to working with the
-            bones and soft tissue of the mouth, these specialists keep the
-            supporting structures in working order.
+            Our laser gum therapy removes inflamed gum tissue from periodontal
+            disease and helps your gums heal naturally, avoiding more serious
+            problems in the future. Treatment is more precise and in most cases
+            is a painless alternative to traditional gum therapies.
           </p>
         </div>
       </div>
     </div>
     <Link to="/services">
-      <button type="button">View All Services</button>
+      <button type="button">View full list of services</button>
     </Link>
   </section>
 );

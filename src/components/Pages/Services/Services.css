@@ -48,7 +48,6 @@
 }
 .our-services-container {
   background-color: white;
-  text-align: center;
   color: #4b7c9c;
   width: 100%;
   margin: 0;
@@ -64,6 +63,7 @@
   font-family: "Red Hat Display", sans-serif;
   margin-top: 0px;
   font-size: 3em;
+  font-weight: 400;
   line-height: 1.75em;
 }
 
@@ -92,18 +92,35 @@
 }
 
 .services-col {
-  display: block;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 50%;
   height: 30%;
   border-style: none;
   padding-bottom: 5%;
+  text-align: left;
 }
 
-.services-col img {
+.services-header {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.services-header img {
   max-width: 50px;
   height: 80px;
-  margin-bottom: 20px;
+}
+
+.services-text h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-top: 30px;
+  padding-left: 10px;
 }
 
 .services-text {
@@ -112,12 +129,6 @@
   text-align: left;
   width: 80%;
   word-wrap: break-word;
-}
-
-.services-text h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1.5em;
 }
 
 .services-text p {
@@ -129,24 +140,26 @@
 @media only screen and (max-width: 660px) {
   .services-col {
     width: 100%;
-    margin-top: 10px;
   }
 
-  .services-col p {
+  .services-header h2 {
+    font-size: 1.3em;
+    padding-top: 5px;
+  }
+
+  .services-text p {
     font-size: 1em;
   }
 
-  .services-col h2 {
-    font-size: 1.5em;
-  }
   .services-col img {
     height: 40px;
   }
 
   .services-text {
-    width: 90%;
+    width: 80%;
   }
 }
+
 .services-container button {
   font-family: "Montserrat", sans-serif;
   background: #cf5695;

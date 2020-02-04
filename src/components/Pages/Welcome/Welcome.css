@@ -65,6 +65,7 @@
   width: 330px;
   margin-top: 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .welcome-appt-btn:hover {
