@@ -21,7 +21,7 @@ class Appointment extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    const templateId = "";
+    const templateId = "template_qWttzqDG";
 
     this.sendFeedback(templateId, {
       message_html: this.state.message,

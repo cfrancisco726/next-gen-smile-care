@@ -15,7 +15,7 @@ function thankYou() {
       </section>
       <section className="error-res">
         <div>
-          <h2>Error. Please contact via email DrJane@nextsmilecare.com .</h2>
+          <h2>Error. Please contact via email DrJane@nextsmilecare.com.</h2>
         </div>
       </section>
     </div>

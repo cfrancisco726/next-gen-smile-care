@@ -11,7 +11,7 @@
 }
 
 @media only screen and (max-width: 660px) {
-  error-header {
+  .error-header {
     height: 20vh;
   }
 }
@@ -50,4 +50,10 @@
   padding: 5% 0 5% 0;
   background-color: #69b0bc;
   color: white;
+}
+
+@media only screen and (max-width: 660px) {
+  .error-res h2 {
+    font-size: 1em;
+  }
 }
