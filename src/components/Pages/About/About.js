@@ -54,7 +54,7 @@ function About() {
         </div>
         <div className="about-approach-btn">
           <Link to="/services">
-            <button type="button">View All Services</button>
+            <button type="button">View full list of services</button>
           </Link>
         </div>
       </section>

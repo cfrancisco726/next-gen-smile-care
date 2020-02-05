@@ -1,5 +1,5 @@
 .footer-container {
-  height: 500px;
+  height: 550px;
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -39,13 +39,21 @@
   font-size: 1.5em;
 }
 
+.contact li:nth-child(5) {
+  font-weight: 600;
+}
+
 .gmap iframe {
   margin: 0;
   padding-left: 30px;
+  height: 300px;
+  width: 600px;
 }
 
 @media only screen and (max-width: 750px) {
   .gmap iframe {
     padding-top: 20px;
+    height: 150px;
+    width: 300px;
   }
 }

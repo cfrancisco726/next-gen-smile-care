@@ -36,7 +36,7 @@
   align-items: center;
   font-size: 20px;
   font-weight: 600;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 .toolbar_navigation-items li {
@@ -63,6 +63,7 @@
   border: 0;
   color: white;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 @media (max-width: 1085px) {
@@ -71,11 +72,8 @@
   }
 }
 
+.toolbar_navigation-items button:focus,
 .toolbar_navigation-items button:hover {
-  background-color: #1793a8;
-}
-
-.toolbar_navigation-items button:focus {
   background-color: #1793a8;
   outline: none;
 }

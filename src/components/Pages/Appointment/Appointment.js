@@ -37,10 +37,12 @@ class Appointment extends Component {
       .send("nextgensmilecare", templateId, variables)
       .then(res => {
         console.log("Email successfully sent!");
-        this.props.history.push(`/thank_you`)
+        this.props.history.push(`/thankyou`)
 
       })
-      .catch(err => console.error("failed:", err));
+      .catch(err => {console.error("failed:", err);
+      this.props.history.push(`/error`)
+    });
   }
 
   render() {
@@ -101,7 +103,7 @@ class Appointment extends Component {
               />
             </Form.Group>
             <Button className="appointment-btn" type="submit">
-              Request an appointment
+             Submit
             </Button>
           </Form>
         </section>

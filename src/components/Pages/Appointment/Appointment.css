@@ -48,32 +48,38 @@
 }
 
 .appointment-form {
-  width: 650px;
+  width: 730px;
   margin: auto;
-  padding: 15px;
+  padding: 80px 15px 80px 15px;
   border: none;
   color: white;
-  font-family: "Montserrat Semibold", sans-serif;
+}
+
+.appointment-form h1 {
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 3em;
+  font-weight: normal;
+  padding-bottom: 40px;
 }
 
 @media only screen and (max-width: 660px) {
   .appointment-form {
     width: 100%;
-    padding: 10%;
+    padding: 5% 10% 10% 10%;
   }
   .appointment-form h1 {
     font-size: 1.2em;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
-}
-
-.appointment-form h1 {
-  font-family: "Red Hat Text", sans-serif;
 }
 
 .appointment-form .appointment-btn {
   font-family: "Montserrat", sans-serif;
-  height: 50px;
-  width: 260px;
+  height: 80px;
+  width: 200px;
+  font-size: 1.35em;
+  margin-top: 20px;
   background-color: #cf5695;
   border: #cf5695;
 }
@@ -81,7 +87,7 @@
 @media only screen and (max-width: 660px) {
   .appointment-form .appointment-btn {
     height: 30px;
-    width: 200px;
+    width: 100px;
     font-size: 0.8em;
   }
 }

@@ -78,6 +78,7 @@
 
 .our-office-copy h1 {
   font-family: "Red Hat Text", sans-serif;
+  font-weight: normal;
   font-size: 3em;
 }
 
@@ -128,6 +129,7 @@
 
 .about-approach-copy h1 {
   font-family: "Red Hat Text", sans-serif;
+  font-weight: normal;
   font-size: 3em;
 }
 
@@ -162,6 +164,7 @@
   height: 80px;
   width: 300px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 .about-approach-btn button:hover {
