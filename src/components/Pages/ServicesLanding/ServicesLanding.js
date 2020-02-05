@@ -10,7 +10,10 @@ const services_landing = props => (
     <div className="services-landing-row">
       <div className="services-landing-col">
         <div className="services-landing-header">
-          <img src={require("../../../images/cleaning.svg")} alt="cleaning" />
+          <img
+            src={require("../../../images/cleaning_ko.svg")}
+            alt="cleaning_ko"
+          />
           <h2>Cleaning & Whitening</h2>
         </div>
         <div className="services-landing-text">
@@ -26,8 +29,8 @@ const services_landing = props => (
       <div className="services-landing-col">
         <div className="services-landing-header">
           <img
-            src={require("../../../images/invisalign.svg")}
-            alt="invisalign"
+            src={require("../../../images/dental_implant_ko.svg")}
+            alt="dental_implant_ko"
           />
           <h2>Dental Implants</h2>
         </div>
@@ -42,7 +45,10 @@ const services_landing = props => (
       </div>
       <div className="services-landing-col">
         <div className="services-landing-header">
-          <img src={require("../../../images/implant.svg")} alt="impant" />
+          <img
+            src={require("../../../images/invisalign_ko.svg")}
+            alt="invisalign_ko"
+          />
           <h2>Invisalign</h2>
         </div>
         <div className="services-landing-text">
@@ -57,7 +63,10 @@ const services_landing = props => (
       </div>
       <div className="services-landing-col">
         <div className="services-landing-header">
-          <img src={require("../../../images/perio.svg")} alt="perio" />
+          <img
+            src={require("../../../images/periodontics_ko.svg")}
+            alt="periodontics_ko"
+          />
           <h2>Periodontal Treatment</h2>
         </div>
         <div className="services-landing-text">

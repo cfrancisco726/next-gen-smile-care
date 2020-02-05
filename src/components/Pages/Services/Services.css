@@ -115,7 +115,7 @@
   height: 80px;
 }
 
-.services-text h2 {
+.services-header h2 {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.5em;
@@ -157,30 +157,5 @@
 
   .services-text {
     width: 80%;
-  }
-}
-
-.services-container button {
-  font-family: "Montserrat", sans-serif;
-  background: #cf5695;
-  border: none;
-  color: white;
-  font-size: 1.35em;
-  height: 80px;
-  width: 300px;
-  cursor: pointer;
-  margin-bottom: 5%;
-}
-
-.services-container button:hover {
-  background-color: #b1467e;
-}
-
-@media only screen and (max-width: 660px) {
-  .services-container button {
-    height: 30px;
-    width: 180px;
-    font-size: 0.8em;
-    margin-bottom: 10%;
   }
 }

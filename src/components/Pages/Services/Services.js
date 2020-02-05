@@ -21,10 +21,10 @@ const Services = props => {
           <div className="services-col">
             <div className="services-header">
               <img
-                src={require("../../../images/cleaning.svg")}
-                alt="cleaning"
+                src={require("../../../images/general_dentistry.svg")}
+                alt="general_dentistry"
               />
-                <h2>General Dentistry</h2>
+              <h2>General Dentistry</h2>
             </div>
             <div className="services-text">
               <p>
@@ -40,8 +40,8 @@ const Services = props => {
           <div className="services-col">
             <div className="services-header">
               <img
-                src={require("../../../images/invisalign.svg")}
-                alt="invisalign"
+                src={require("../../../images/cosmetic.svg")}
+                alt="cosmetic"
               />
               <h2>Cosmetic Dentistry</h2>
             </div>
@@ -57,7 +57,10 @@ const Services = props => {
           </div>
           <div className="services-col">
             <div className="services-header">
-              <img src={require("../../../images/implant.svg")} alt="impant" />
+              <img
+                src={require("../../../images/pediatrics.svg")}
+                alt="pediatrics"
+              />
               <h2>Pediatric Dentistry</h2>
             </div>
 
@@ -73,7 +76,10 @@ const Services = props => {
           </div>
           <div className="services-col">
             <div className="services-header">
-              <img src={require("../../../images/perio.svg")} alt="perio" />
+              <img
+                src={require("../../../images/dental_implant.svg")}
+                alt="dental_implant"
+              />
               <h2>Dental Implants</h2>
             </div>
             <div className="services-text">
@@ -87,7 +93,10 @@ const Services = props => {
           </div>
           <div className="services-col">
             <div className="services-header">
-              <img src={require("../../../images/perio.svg")} alt="perio" />
+              <img
+                src={require("../../../images/oral_surgery.svg")}
+                alt="oral_surgery"
+              />
               <h2>Oral Surgery</h2>
             </div>
             <div className="services-text">
@@ -102,15 +111,55 @@ const Services = props => {
           </div>
           <div className="services-col">
             <div className="services-header">
-              <img src={require("../../../images/perio.svg")} alt="perio" />
+              <img
+                src={require("../../../images/periodontics.svg")}
+                alt="periodontics"
+              />
               <h2>Periodontics</h2>
             </div>
             <div className="services-text">
               <p>
-                Park Dental periodontists focus on periodontal treatments to
-                improve oral health. From installing dental implants to working
-                with the bones and soft tissue of the mouth, these specialists
-                keep the supporting structures in working order.
+                Periodontists focus on periodontal treatments to improve oral
+                health. From installing dental implants to working with the
+                bones and soft tissue of the mouth, these specialists keep the
+                supporting structures in working order.
+              </p>
+            </div>
+          </div>
+          <div className="services-col">
+            <div className="services-header">
+              <img
+                src={require("../../../images/cleaning.svg")}
+                alt="cleaning"
+              />
+              <h2>Cleaning & Whitening</h2>
+            </div>
+            <div className="services-text">
+              <p>
+                We provide traditional teeth cleaning and dental bleaching.
+                Teeth whitening is a painless cosmetic dental procedure that
+                takes only minutes in the office and will leave you with bright,
+                radiant teeth so you can show the world your best smile! Most
+                patients only need one visit to uncover the natural beauty of
+                their teeth.
+              </p>
+            </div>
+          </div>
+          <div className="services-col">
+            <div className="services-header">
+              <img
+                src={require("../../../images/invisalign.svg")}
+                alt="invisalign"
+              />
+              <h2>Invisalign</h2>
+            </div>
+            <div className="services-text">
+              <p>
+                The age of metal braces is gone. Clear aligners can help
+                straighten your teeth over time, and most people won't even
+                notice that you've got them. Sold under many brand names
+                (Orthoclear, Invisalign, ClearCorrect), transparent braces is a
+                teeth straightening option that can keep you smiling.
               </p>
             </div>
           </div>
