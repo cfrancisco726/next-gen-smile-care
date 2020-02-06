@@ -4,24 +4,26 @@ import "./Footer.css";
 
 const footer = props => (
   <footer className="footer-container">
-    <div className="hours">
-      <ul>
-        <li>OFFICE HOURS</li>
-        <li>Mon 9:00 am - 5:00 pm</li>
-        <li>Tues 9:00 am - 5:00 pm</li>
-        <li>Wed 9:00 am - 5:00 pm</li>
-        <li>Thurs 9:00 am - 5:00 pm</li>
-        <li>Fri 9:00 am - 5:00 pm</li>
-      </ul>
-    </div>
-    <div className="contact">
-      <ul>
-        <li>CONTACT US</li>
-        <li> 83-48 Langdale Street</li>
-        <li> New Hyde Park, NY 11040</li>
-        <li>917 555-555</li>
-        <li>DrJane@nextsmilecare.com</li>
-      </ul>
+    <div className="footer-text">
+      <div className="hours">
+          <ul>
+          <li>OFFICE HOURS</li>
+          <li>Mon 9:00 am - 5:00 pm</li>
+          <li>Tues 9:00 am - 5:00 pm</li>
+          <li>Wed 9:00 am - 5:00 pm</li>
+          <li>Thurs 9:00 am - 5:00 pm</li>
+          <li>Fri 9:00 am - 5:00 pm</li>
+        </ul>
+        </div>
+      <div className="contact">
+          <ul>
+          <li>CONTACT US</li>
+          <li> 83-48 Langdale Street</li>
+          <li> New Hyde Park, NY 11040</li>
+          <li>917 555-555</li>
+          <li>DrJane@nextsmilecare.com</li>
+        </ul>
+        </div>
     </div>
     <div className="gmap">
       <iframe
