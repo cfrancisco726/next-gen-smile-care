@@ -25,7 +25,7 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 1650px) {
+@media only screen and (max-width: 1300px) {
   .bio-row {
     flex-direction: column;
     height: auto;

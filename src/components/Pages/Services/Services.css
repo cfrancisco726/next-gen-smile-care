@@ -48,7 +48,6 @@
 }
 .our-services-container {
   background-color: white;
-  color: #4b7c9c;
   width: 100%;
   margin: 0;
 }
@@ -65,9 +64,15 @@
   font-size: 3em;
   font-weight: 400;
   line-height: 1.75em;
+  color: #69b0bc;
 }
 
-.services-title p {
+.services-header,
+.services-text {
+  color: #4b7c9c;
+}
+
+.services-text p {
   font-size: 1.35em;
 }
 @media only screen and (max-width: 660px) {
@@ -79,7 +84,7 @@
     font-size: 1.75em;
   }
 
-  .services-title p {
+  .services-text p {
     font-size: 1em;
   }
 }
