@@ -61,10 +61,9 @@ function About() {
       <section className="about-quote">
         <div>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s.
+            From wisdom tooth extraction to low-cost cosmetic dentistry, our
+            competent and efficient team will deliver top notch dental care to
+            all of our patients across the region.
           </p>
           <p>------------</p>
           <p>Dr. Jane Jaroonarm</p>
