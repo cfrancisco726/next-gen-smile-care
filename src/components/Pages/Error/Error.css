@@ -51,6 +51,9 @@
   background-color: #69b0bc;
   color: white;
 }
+.error-res h2 {
+  font-size: 1.5em;
+}
 
 @media only screen and (max-width: 660px) {
   .error-res h2 {
