@@ -6,7 +6,7 @@ const footer = props => (
   <footer className="footer-container">
     <div className="footer-text">
       <div className="hours">
-          <ul>
+        <ul>
           <li>OFFICE HOURS</li>
           <li>Mon 9:00 am - 5:00 pm</li>
           <li>Tues 9:00 am - 5:00 pm</li>
@@ -14,16 +14,16 @@ const footer = props => (
           <li>Thurs 9:00 am - 5:00 pm</li>
           <li>Fri 9:00 am - 5:00 pm</li>
         </ul>
-        </div>
+      </div>
       <div className="contact">
-          <ul>
+        <ul>
           <li>CONTACT US</li>
           <li> 83-48 Langdale Street</li>
           <li> New Hyde Park, NY 11040</li>
           <li>917 555-555</li>
-          <li>DrJane@nextsmilecare.com</li>
+          <li>nextgensmilecare@gmail.com</li>
         </ul>
-        </div>
+      </div>
     </div>
     <div className="gmap">
       <iframe
