@@ -82,7 +82,7 @@ class Appointment extends Component {
               />
             </Form.Group>
             <Form.Group controlId="formPhone">
-              <Form.Label>phone number*</Form.Label>
+              <Form.Label>PHONE NUMBER*</Form.Label>
               <Form.Control
                 type="tel"
                 name="phone"
