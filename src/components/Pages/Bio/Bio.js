@@ -12,7 +12,7 @@ const bio = props => (
         <div className="bio-column-txt">
           <h1>DR. JANE JAROONNARM</h1>
           <p>
-            Jane Jaroonnarm, DDS, specializes in cosmetic dentistry and general
+            Jane Jaroonnarm, DMD, specializes in cosmetic dentistry and general
             dentistry. She treats men, women, teens, and children at Midtown
             Dental Care in New York City with warmth and compassion. Having
             earned her DDS in 2006 from Tufts University in Medford,
